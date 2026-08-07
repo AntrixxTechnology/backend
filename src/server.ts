@@ -59,10 +59,15 @@ app.get('/health', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`=======================================================`);
-  console.log(`  Antrixx Technology API Server listening on port ${PORT}`);
-  console.log(`  Status: http://localhost:${PORT}/status`);
-  console.log(`  Healthcheck: http://localhost:${PORT}/health`);
-  console.log(`=======================================================`);
-});
+// Only listen on a port if not running in Vercel Serverless environment
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`=======================================================`);
+    console.log(`  Antrixx Technology API Server listening on port ${PORT}`);
+    console.log(`  Status: http://localhost:${PORT}/status`);
+    console.log(`  Healthcheck: http://localhost:${PORT}/health`);
+    console.log(`=======================================================`);
+  });
+}
+
+export default app;
