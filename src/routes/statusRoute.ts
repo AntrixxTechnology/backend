@@ -3,6 +3,9 @@ import { Router } from 'express';
 const router = Router();
 const startTime = Date.now();
 
+import { getRepository } from '../repository/index.js';
+import { getStorageProvider } from '../storage/index.js';
+
 router.get('/api/status', (req, res) => {
   res.json({
     status: 'ONLINE',
@@ -10,6 +13,8 @@ router.get('/api/status', (req, res) => {
     port: process.env.PORT || 5000,
     uptime_seconds: Math.floor((Date.now() - startTime) / 1000),
     timestamp: new Date().toISOString(),
+    repository: getRepository().constructor.name,
+    storage: getStorageProvider().constructor.name
   });
 });
 
