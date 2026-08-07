@@ -1,0 +1,50 @@
+[
+  {
+    "id": "faq-1",
+    "question": "What industries does Antrixx Technology serve?",
+    "answer": "We engineer utility and thermal solutions tailored for process industries across India, including Food Processing & FMCG, Rice & Agro Processing, Textile Processing Mills, Beverages & Bottling Plants, Pharmaceuticals, Chemical Processing, and Heavy Manufacturing.",
+    "category": "General",
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "faq-2",
+    "question": "What core solutions does Antrixx provide?",
+    "answer": "Our 12 core solution verticals span Boiler House Automation & Auto Draft Control, Utility Remote Monitoring SCADA Telemetry, Pollution Control Equipment (Bag Filters, Scrubbers), Ash & Fuel Handling Systems, Steam Engineering Automation, Spares Supply, Energy Loss Diagnostics, Retrofitting, and Balance-of-Plant (BOP) Management.",
+    "category": "Solutions",
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "faq-3",
+    "question": "Do you provide on-site installation and commissioning?",
+    "answer": "Yes. Antrixx delivers end-to-end turnkey project execution, including civil/structural foundation guidance, mechanical piping erection, PLC automation panel wiring, steam trials, commissioning, and operator hands-on training.",
+    "category": "Services",
+    "sort_order": 3,
+    "is_published": true
+  },
+  {
+    "id": "faq-4",
+    "question": "Can you customize solutions according to our plant requirements?",
+    "answer": "Absolutely. Every boiler house, furnace, and utility loop has unique operating parameters. We design custom P&ID layouts, load-cell weighing bunkers, and closed-loop VFD control panels tailored strictly to your plant fuel type, capacity, and steam load dynamics.",
+    "category": "Customization",
+    "sort_order": 4,
+    "is_published": true
+  },
+  {
+    "id": "faq-5",
+    "question": "Do you provide after-sales support and emergency spares dispatch?",
+    "answer": "Yes. We maintain a pan-India field dispatch program and stock critical boiler spares, Nomex filter bags, cages, dosing pumps, and steam accessories for emergency dispatch within 24 hours.",
+    "category": "Support",
+    "sort_order": 5,
+    "is_published": true
+  },
+  {
+    "id": "faq-6",
+    "question": "How can I request a technical audit or project quote?",
+    "answer": "You can contact our engineering team via phone at +91 9748636108 / 9477179885, email us at antrixxtechnology@gmail.com, or fill out the contact form on our website to schedule an on-site audit.",
+    "category": "Contact",
+    "sort_order": 6,
+    "is_published": true
+  }
+]

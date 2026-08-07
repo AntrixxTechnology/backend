@@ -1,0 +1,23 @@
+{
+  "id": "about-1",
+  "company_story": "Antrixx Technology was established by a team of veteran thermal and utility automation engineers dedicated to optimizing industrial energy efficiency across India. Operating extensively across process industries—including food processing, FMCG, rice & agro processing, textiles, beverages, and chemicals—our team specializes in the sales, engineering, installation, and balance-of-plant service for boilers, thermic fluid heaters, hot water generators, steam automation, and industrial water treatment facilities.",
+  "mission": "To transform industrial utility operations through smart automation, rigorous energy loss diagnostics, and sustainable balance-of-plant engineering that minimizes fuel costs and carbon footprint.",
+  "vision": "To be the most trusted industrial thermal and utility optimization engineering partner in South Asia, recognized for zero-downtime solutions and data-backed operational excellence.",
+  "values": [
+    "Industrial Reliability — Zero compromises on component metallurgy, safety, or control precision.",
+    "Data-Backed Integrity — Every efficiency recommendation is validated by calibrated sensors.",
+    "Pan-India SLA Agility — Rapid field dispatch and continuous technical support."
+  ],
+  "capabilities": [
+    "Boiler House & Thermic Fluid Heater Automation",
+    "Utility Remote Monitoring & SCADA Telemetry",
+    "Pollution Control Systems (Bag Filters, Scrubbers, Cyclones)",
+    "Pneumatic & Vacuum Ash Handling Systems",
+    "Solid Fuel Storage & Automated Conveying",
+    "Steam Engineering Automation (PRVs, Blowdown, Traps)",
+    "Industrial Spares Dispatch & Emergency Replacements",
+    "Thermal Loss Diagnostics & Efficiency Audits",
+    "Heat Pump & Chilling System BOP Management"
+  ],
+  "hero_image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop"
+}

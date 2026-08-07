@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: antrixx-backend-api
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN_FRONTEND
+        sync: false
+      - key: CORS_ORIGIN_ADMIN
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false

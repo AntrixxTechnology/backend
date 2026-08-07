@@ -1,0 +1,65 @@
+[
+  {
+    "id": "job-1",
+    "title": "Senior Thermal & Automation Engineer",
+    "department": "Engineering & Controls",
+    "location": "Kolkata, West Bengal",
+    "type": "Full-time",
+    "experience": "4–7 Years",
+    "description": "Lead closed-loop boiler combustion control design, PLC programming, and on-site utility commissioning.",
+    "requirements": [
+      "Degree in Mechanical/Electrical/Instrumentation Engineering",
+      "Hands-on experience with Siemens/AB PLCs",
+      "Knowledge of IBR boiler codes"
+    ],
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "job-2",
+    "title": "Field Commissioning & Service Engineer",
+    "department": "Pan-India Operations",
+    "location": "Field Dispatch / Kolkata",
+    "type": "Full-time",
+    "experience": "2–5 Years",
+    "description": "Direct field erection, bag filter commissioning, and 24/7 technical support for industrial clients.",
+    "requirements": [
+      "Diploma/Degree in Engineering",
+      "Willingness to travel for field dispatch",
+      "Experience with VFDs and industrial sensors"
+    ],
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "job-3",
+    "title": "SCADA & IoT Telemetry Developer",
+    "department": "Digital Utilities",
+    "location": "Remote / Hybrid",
+    "type": "Full-time",
+    "experience": "3+ Years",
+    "description": "Develop cloud-enabled SCADA dashboards, MQTT gateway integrations, and live data telemetry pipelines.",
+    "requirements": [
+      "Proficiency in TypeScript/Node.js/React",
+      "Experience with Modbus RS485 and MQTT",
+      "Knowledge of industrial IoT protocols"
+    ],
+    "sort_order": 3,
+    "is_published": true
+  },
+  {
+    "id": "job-4",
+    "title": "Industrial Sales & Project Manager",
+    "department": "Business Development",
+    "location": "Kolkata / Eastern Region",
+    "type": "Full-time",
+    "experience": "5+ Years",
+    "description": "Manage enterprise B2B sales for boiler house automation, turnkey EPC projects, and spares dispatch program.",
+    "requirements": [
+      "Proven B2B sales track record in industrial utilities",
+      "Strong network across FMCG, Agro, and Process plants"
+    ],
+    "sort_order": 4,
+    "is_published": true
+  }
+]

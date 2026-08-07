@@ -1,0 +1,32 @@
+[
+  {
+    "id": "res-1",
+    "slug": "boiler-combustion-auto-draft-control-roi",
+    "title": "Optimizing Biomass Boiler Efficiency via Auto Draft & Closed-Loop Combustion Control",
+    "summary": "How modern VFD-driven furnace draft control and continuous O2 trim reduce solid fuel consumption by 12% to 18% in agro and FMCG plants.",
+    "content": "### Introduction\n\nSolid fuels like rice husk, mustard stalk, briquettes, and coal present volatile burning characteristics inside industrial boiler furnaces. Manual damper adjustments frequently lead to excessive unburnt carbon loss, high flue gas temperatures, or dark smoke emissions.\n\n### The Science of Closed-Loop Draft Control\n\nBy synchronizing Induced Draft (ID) fan and Forced Draft (FD) fan speeds via variable frequency drives (VFDs) and differential pressure transmitters, Antrixx Auto Draft Control maintains furnace pressure within a strict ±0.5 mm WC envelope.",
+    "category": "Technical Guide",
+    "author": "Antrixx Engineering Team",
+    "read_time": "6 min read",
+    "cover_image_url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=800&auto=format&fit=crop",
+    "download_file_url": "/api/resources/downloads/profile-pdf",
+    "published_date": "2026-08-01T10:00:00.000Z",
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "res-2",
+    "slug": "steam-trap-energy-loss-diagnosis",
+    "title": "Uncovering Hidden Dollars: A Guide to Non-Invasive Steam Trap & Line Audit",
+    "summary": "Learn how ultrasonic leak detection and infrared thermography identify failed steam traps and un-insulated lines before they inflate utility bills.",
+    "content": "### Why Steam Traps Fail Silently\n\nUp to 20% of steam traps in an un-audited industrial facility are blowing live steam straight into condensate lines or atmosphere.",
+    "category": "Energy Audits",
+    "author": "Antrixx Diagnostic Division",
+    "read_time": "5 min read",
+    "cover_image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop",
+    "download_file_url": "/api/resources/downloads/profile-pdf",
+    "published_date": "2026-08-04T10:00:00.000Z",
+    "sort_order": 2,
+    "is_published": true
+  }
+]

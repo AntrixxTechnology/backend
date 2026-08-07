@@ -1,0 +1,52 @@
+[
+  {
+    "id": "s1",
+    "label": "Projects Completed",
+    "value_number": 500,
+    "suffix": "+",
+    "description": "Pan-India boiler house & BOP projects",
+    "icon_name": "Factory",
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "s2",
+    "label": "Client Satisfaction",
+    "value_number": 98,
+    "suffix": "%",
+    "description": "Trusted by leading FMCG & Textile plants",
+    "icon_name": "Smile",
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "s3",
+    "label": "Technical Support",
+    "value_number": 24,
+    "suffix": "x7",
+    "description": "Rapid field dispatch & diagnostic support",
+    "icon_name": "Headphones",
+    "sort_order": 3,
+    "is_published": true
+  },
+  {
+    "id": "s4",
+    "label": "Industrial Solutions",
+    "value_number": 15,
+    "suffix": "+",
+    "description": "Turnkey thermal engineering verticals",
+    "icon_name": "Cpu",
+    "sort_order": 4,
+    "is_published": true
+  },
+  {
+    "id": "s5",
+    "label": "Years of Excellence",
+    "value_number": 10,
+    "suffix": "+",
+    "description": "Biomass combustion & utility expertise",
+    "icon_name": "ShieldCheck",
+    "sort_order": 5,
+    "is_published": true
+  }
+]

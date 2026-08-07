@@ -1,0 +1,82 @@
+[
+  {
+    "id": "client-1",
+    "name": "ITC Limited",
+    "logo_url": "/uploads/client-logos/itc.png",
+    "website_url": "https://www.itcportal.com",
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "client-2",
+    "name": "Haldiram's",
+    "logo_url": "/uploads/client-logos/haldirams.png",
+    "website_url": "https://www.haldiram.com",
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "client-3",
+    "name": "CG Chaudhary Group",
+    "logo_url": "/uploads/client-logos/cg-chaudhary.png",
+    "website_url": "https://www.cgcorpglobal.com",
+    "sort_order": 3,
+    "is_published": true
+  },
+  {
+    "id": "client-4",
+    "name": "Lalbaba Rice",
+    "logo_url": "/uploads/client-logos/lalbaba.png",
+    "website_url": "https://www.lalbabarice.com",
+    "sort_order": 4,
+    "is_published": true
+  },
+  {
+    "id": "client-5",
+    "name": "Yellow Diamond",
+    "logo_url": "/uploads/client-logos/yellow-diamond.png",
+    "website_url": "https://www.prataapsnacks.com",
+    "sort_order": 5,
+    "is_published": true
+  },
+  {
+    "id": "client-6",
+    "name": "Nimbus",
+    "logo_url": "/uploads/client-logos/nimbus.png",
+    "website_url": "#",
+    "sort_order": 6,
+    "is_published": true
+  },
+  {
+    "id": "client-7",
+    "name": "Ram Ram",
+    "logo_url": "/uploads/client-logos/tamtam.png",
+    "website_url": "#",
+    "sort_order": 7,
+    "is_published": true
+  },
+  {
+    "id": "client-8",
+    "name": "Prabhuji Pure Food",
+    "logo_url": "/uploads/client-logos/prabhuji.png",
+    "website_url": "#",
+    "sort_order": 8,
+    "is_published": true
+  },
+  {
+    "id": "client-9",
+    "name": "Coca-Cola",
+    "logo_url": "/uploads/client-logos/cocacola.png",
+    "website_url": "https://www.coca-colacompany.com",
+    "sort_order": 9,
+    "is_published": true
+  },
+  {
+    "id": "client-10",
+    "name": "Kirloskar Chillers",
+    "logo_url": "/uploads/client-logos/kirloskar.png",
+    "website_url": "https://www.kirloskar.com",
+    "sort_order": 10,
+    "is_published": true
+  }
+]

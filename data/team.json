@@ -1,0 +1,32 @@
+[
+  {
+    "id": "team-1",
+    "name": "Managing Director & Chief Engineer",
+    "role": "Thermal Engineering & Utility Strategy",
+    "bio": "Over 20 years of hands-on experience in industrial boiler house design, biomass combustion engineering, and utility balance-of-plant management.",
+    "image_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
+    "linkedin_url": "https://linkedin.com",
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "team-2",
+    "name": "Head of Automation & SCADA Systems",
+    "role": "Controls & Telemetry Lead",
+    "bio": "Specializes in PLC/HMI automation, IoT remote monitoring telemetry, combustion control loops, and digital steam fuel tracking systems.",
+    "image_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
+    "linkedin_url": "https://linkedin.com",
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "team-3",
+    "name": "Lead Field Service & Commissioning Engineer",
+    "role": "Spares & On-Site Projects",
+    "bio": "Directs pan-India field dispatch, bag filter erection, boiler retrofitting, and 24/7 technical support operations.",
+    "image_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop",
+    "linkedin_url": "https://linkedin.com",
+    "sort_order": 3,
+    "is_published": true
+  }
+]

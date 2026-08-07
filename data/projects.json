@@ -1,0 +1,74 @@
+[
+  {
+    "id": "proj-1",
+    "slug": "fmcg-boiler-automation-retrofit",
+    "title": "Boiler House Automation & SCADA Retrofit",
+    "client_name": "Haldiram's Processing Unit",
+    "industry": "Food Processing & FMCG",
+    "location": "West Bengal, India",
+    "challenge": "Manual furnace draft control resulted in frequent steam pressure drops and high unburnt fuel waste.",
+    "solution": "Installed Antrixx closed-loop Auto Combustion & Auto Draft Control system with VFD fan controls and HMI SCADA.",
+    "results": [
+      "14.5% Reduction in Solid Fuel Consumption",
+      "99.2% Steam Pressure Stability during Peak Loads",
+      "Payback Period achieved in less than 7 months"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=800&auto=format&fit=crop",
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "proj-2",
+    "slug": "agro-steam-fuel-tracker-installation",
+    "title": "Steam Fuel Tracker & Remote Telemetry Implementation",
+    "client_name": "Lalbaba Rice Mill",
+    "industry": "Rice & Agro Processing",
+    "location": "Burdwan, West Bengal",
+    "challenge": "Lack of real-time visibility into husk consumption quality and steam evaporation ratios.",
+    "solution": "Integrated Antrixx Steam Fuel Tracker featuring load-cell equipped measuring bunker and vortex steam flow meter.",
+    "results": [
+      "Real-time tracking of Husk-to-Steam Evaporation Ratio",
+      "Identified and eliminated 12% moisture-related fuel losses",
+      "Zero un-budgeted steam downtime over 12 months"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=800&auto=format&fit=crop",
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "proj-3",
+    "slug": "beverage-chilling-bop-engineering",
+    "title": "Chilling Water BOP & Thermal Optimization",
+    "client_name": "Coca-Cola Bottling Partner Plant",
+    "industry": "Beverages",
+    "location": "Eastern Region, India",
+    "challenge": "High power consumption in secondary glycol/water pumping loops and uneven thermal distribution.",
+    "solution": "Designed and commissioned complete Balance-of-Plant hydronic pumping skids and automated control valves.",
+    "results": [
+      "22% Energy Reduction in Chilled Water Pumping",
+      "Precise ±0.2°C Temperature Holding at Bottling Line",
+      "Seamless integration with plant chillers"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?q=80&w=800&auto=format&fit=crop",
+    "sort_order": 3,
+    "is_published": true
+  },
+  {
+    "id": "proj-4",
+    "slug": "pollution-control-bag-filter-turnkey",
+    "title": "Pulse-Jet Bag Filter & Ash Handling Turnkey Project",
+    "client_name": "CG Chaudhary Group Unit",
+    "industry": "General Manufacturing",
+    "location": "Nepal / India Border Facility",
+    "challenge": "Flue gas particulate emissions exceeding environmental standards during heavy biomass boiler firing.",
+    "solution": "Designed and erected turnkey Pulse-Jet Bag Filter operating strictly at 1.0 Air-to-Cloth ratio.",
+    "results": [
+      "Flue Gas Emission reduced to < 22 mg/Nm³",
+      "100% Dust-free ash discharge into storage silos",
+      "Achieved full PCB environmental compliance certification"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=800&auto=format&fit=crop",
+    "sort_order": 4,
+    "is_published": true
+  }
+]

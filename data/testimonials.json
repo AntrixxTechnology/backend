@@ -1,0 +1,35 @@
+[
+  {
+    "id": "test-1",
+    "author_name": "Rajesh Sharma",
+    "author_role": "General Manager - Utility Operations",
+    "company_name": "Haldiram Foods Manufacturing",
+    "quote": "Antrixx Technology's boiler draft control and steam loss diagnosis completely transformed our utility room efficiency. We saved over 14% on monthly fuel costs.",
+    "rating": 5,
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "test-2",
+    "author_name": "Amitabha Das",
+    "author_role": "Chief Plant Engineer",
+    "company_name": "Lalbaba Rice Industries",
+    "quote": "The Steam Fuel Tracker system gives our management team live transparency on husk consumption per ton of steam. Antrixx engineers know industrial steam inside out.",
+    "rating": 5,
+    "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "test-3",
+    "author_name": "Siddharth Roy",
+    "author_role": "Head of Engineering & BOP",
+    "company_name": "Prabhuji Pure Food",
+    "quote": "Their fast dispatch on boiler spares and 24/7 technical support saved us during a major production peak. Reliable, professional, and zero fluff engineering.",
+    "rating": 5,
+    "avatar_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop",
+    "sort_order": 3,
+    "is_published": true
+  }
+]

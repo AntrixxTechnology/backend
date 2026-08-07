@@ -1,0 +1,338 @@
+[
+  {
+    "id": "sol-1",
+    "slug": "utility-remote-monitoring",
+    "title": "Utility Remote Monitoring System",
+    "category": "IoT & Digital Utilities",
+    "short_description": "Real-time telemetry and cloud analytics monitoring plant steam flow, boiler efficiency, and utility health 24/7.",
+    "full_description": "Our Utility Remote Monitoring System provides enterprise plant managers with continuous operational intelligence. By integrating high-precision sensor arrays, field PLCs, and cloud-enabled SCADA telemetry, Antrixx enables real-time tracking of steam generation, fuel burn rates, flue gas temperatures, and utility power draw.",
+    "icon_name": "Activity",
+    "hero_image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "24/7 Cloud Telemetry & Mobile Dashboard",
+      "Automated Alert Triggers via SMS & Email",
+      "Historical Trend Analysis & Fuel-to-Steam Ratio Logging",
+      "Multi-Plant Fleet Management Integration"
+    ],
+    "deliverables": [
+      "Plug-and-play IoT gateway panel installation",
+      "Custom SCADA HMI dashboard configuration",
+      "Monthly thermal efficiency audit reports"
+    ],
+    "technical_specs": {
+      "Communication": "Modbus RS485 / Ethernet / MQTT",
+      "Data Logging Rate": "Every 1 second",
+      "Sensor Compatibility": "Steam Flow, Pressure, Temp, O2, Load Cell"
+    },
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "sol-2",
+    "slug": "boiler-automation",
+    "title": "Boiler Automation & Draft Control",
+    "category": "Boiler House Control",
+    "short_description": "Integrated Auto Combustion, Auto Draft, and Drum Level Control systems for precision firing and fuel reduction.",
+    "full_description": "Transform manual boiler operations into a self-optimizing thermal asset. Antrixx Boiler Automation delivers complete closed-loop control over furnace draft, forced/induced draft fan speeds, fuel feeder rates, and drum level water modulation.",
+    "icon_name": "Gauge",
+    "hero_image_url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Closed-Loop Auto Combustion Control",
+      "PID Drum Level Modulation (3-Element Control)",
+      "Furnace Draft Control via VFD-driven ID/FD Fans",
+      "Touchscreen HMI with Intuitive SCADA Synoptics"
+    ],
+    "deliverables": [
+      "Custom PLC & VFD Automation Panel",
+      "Differential Pressure & Level Transmitters",
+      "O2 Flue Gas Analyzer Integration"
+    ],
+    "technical_specs": {
+      "PLC Platform": "Siemens S7-1200 / Allen Bradley",
+      "Draft Accuracy": "±0.5 mm WC",
+      "VFD Response": "< 200 ms dynamic loop response"
+    },
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "sol-3",
+    "slug": "pollution-control-equipment",
+    "title": "Pollution Control Equipment",
+    "category": "Environmental & Emission Systems",
+    "short_description": "High-efficiency Bag Filters, Cyclone Dust Collectors, and Wet Scrubbers ensuring clean, compliant flue gas emissions.",
+    "full_description": "Ensure total environmental compliance while maintaining optimal boiler draft performance. Antrixx engineers and supplies heavy-duty flue gas cleaning systems including Cyclone Dust Collectors, Pulse-Jet Bag Filters (1.0 Air-to-Cloth ratio), and Spray-type Wet Scrubbers.",
+    "icon_name": "Wind",
+    "hero_image_url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Cyclone Dust Collectors with Heavy-Duty Abrasion Liners",
+      "Pulse-Jet Bag Filters guaranteed at 1.0 Air-to-Cloth Ratio",
+      "Wet Scrubbers with Continuous Water Filtration & Re-circulation",
+      "Particulate Emissions Guaranteed < 30 mg/Nm³"
+    ],
+    "deliverables": [
+      "Turnkey structural casing, filter bags, and cages",
+      "Sequential pulse controller panel & solenoid valves",
+      "Recirculation slurry pumps & secondary filtration unit"
+    ],
+    "technical_specs": {
+      "Air-to-Cloth Ratio": "1.0 m/min (Strict Design Limit)",
+      "Filter Bag Material": "Nomex / PPS / Fiberglass with PTFE Membrane",
+      "Collection Efficiency": "99.8% down to 1 micron"
+    },
+    "sort_order": 3,
+    "is_published": true
+  },
+  {
+    "id": "sol-4",
+    "slug": "ash-handling-system",
+    "title": "Ash Handling Systems",
+    "category": "Solid Material Handling",
+    "short_description": "Clean, enclosed Low Pressure and Vacuum Ash Conveying systems for rapid bed-ash and fly-ash transfer.",
+    "full_description": "Antrixx Ash Handling Systems eliminate dust generation, manual labor, and thermal hazards associated with boiler ash removal. We offer Low Pressure Pneumatic Conveying and fully enclosed Vacuum Ash Conveying Systems.",
+    "icon_name": "Layers",
+    "hero_image_url": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Clean, Dust-Free Vacuum Ash Extraction",
+      "Low Pressure Pneumatic Conveying for Heavy Bed Ash",
+      "Multi-Point Hopper Pick Up with Automated Rotary Air-locks",
+      "Heavy-Duty Abrasion Resistant Pipe Bends"
+    ],
+    "deliverables": [
+      "Vacuum exhauster blowers & cyclone separators",
+      "Pneumatic ash conditioners & unloading chutes",
+      "Automated PLC sequence controller"
+    ],
+    "technical_specs": {
+      "Conveying Capacity": "1 to 25 TPH",
+      "Operating Vacuum": "-400 to -600 mbar",
+      "Material": "Basalt-lined / Hardened Cast Iron Elbows"
+    },
+    "sort_order": 4,
+    "is_published": true
+  },
+  {
+    "id": "sol-5",
+    "slug": "fuel-handling-system",
+    "title": "Fuel Handling Systems",
+    "category": "Solid Material Handling",
+    "short_description": "End-to-end solid fuel receiving, crushing, screening, storage, and furnace feeding for husk, briquettes, and coal.",
+    "full_description": "Uninterrupted fuel supply is essential for continuous steam production. Antrixx delivers rugged, automated fuel handling systems designed for solid fuels including rice husk, wood chips, biomass briquettes, and coal.",
+    "icon_name": "Truck",
+    "hero_image_url": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Heavy-Duty Storage Hoppers & Storage Silos",
+      "Belt, Screw, and Drag Chain Conveyor Assemblies",
+      "Fuel Crusher & Screening Vibratory Units",
+      "Variable-Speed Furnace Feeder Drives with PLC Sync"
+    ],
+    "deliverables": [
+      "Complete mechanical handling structure & galleries",
+      "Elevator towers, belt trippers, & magnetic separators",
+      "Motor control centers (MCC) & interlocked safety panels"
+    ],
+    "technical_specs": {
+      "Fuel Types": "Rice Husk, Coal, Wood Chips, Mustard Stalk, Briquettes",
+      "Throughput": "Up to 50 TPH handling capacity",
+      "Feeder Drive": "VFD synchronized with combustion controller"
+    },
+    "sort_order": 5,
+    "is_published": true
+  },
+  {
+    "id": "sol-6",
+    "slug": "steam-fuel-tracker",
+    "title": "Steam Fuel Tracker System",
+    "category": "IoT & Digital Utilities",
+    "short_description": "Smart data logging system combining industry load cells and steam flow meters to calculate real-time steam-to-fuel ratios.",
+    "full_description": "The STEAM FUEL TRACKER is Antrixx proprietary intelligent data logging platform. Utilizing heavy-duty strain gauge load cells under the fuel measuring bunker alongside vortex steam flow meters, the system calculates exact Steam-to-Fuel Ratios in real time.",
+    "icon_name": "Cpu",
+    "hero_image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Precision Load-Cell Weight Sensing under Bunker",
+      "Vortex Steam Flow Mass Meter Integration",
+      "Live Calculation of Steam-to-Fuel Ratio (Evaporation Ratio)",
+      "7-Inch Industrial Touch HMI with Shift Report Printing"
+    ],
+    "deliverables": [
+      "Load cell mounting module & weighing bunker retrofit",
+      "Pre-programmed PLC & HMI SCADA assembly",
+      "Exportable CSV/PDF shift audit log software"
+    ],
+    "technical_specs": {
+      "Weighing Accuracy": "±0.1% Full Scale",
+      "Flow Accuracy": "±1.0% of reading",
+      "Display": "7-inch TFT 65K color touchscreen"
+    },
+    "sort_order": 6,
+    "is_published": true
+  },
+  {
+    "id": "sol-7",
+    "slug": "steam-engineering-automation",
+    "title": "Steam Engineering Automation",
+    "category": "Steam & Thermal Systems",
+    "short_description": "Smart trap monitoring, automated blowdown, flash steam recovery, PRVs, and motorized steam control valves.",
+    "full_description": "Maximize thermal output while neutralizing steam distribution losses across process plants. Antrixx Steam Engineering Automation encompasses advanced steam flow metering, thermic fluid heat meters, automated boiler TDS blowdown control, flash steam recovery units, and pressure reducing stations.",
+    "icon_name": "Zap",
+    "hero_image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Boiler TDS Auto-Blowdown Control Systems",
+      "Flash Steam Recovery Units & Condensate Polishing",
+      "Pneumatic Actuated Control Valves & PRV Stations",
+      "Thermic Fluid Heat Energy Meters"
+    ],
+    "deliverables": [
+      "Pre-engineered PRV station skids",
+      "Blowdown conductivity sensor & motorized valve assembly",
+      "Comprehensive steam piping & trap survey reports"
+    ],
+    "technical_specs": {
+      "Pressure Range": "Up to 32 bar steam pressure",
+      "Control Valve Duty": "Class VI Shut-off pneumatic actuation",
+      "TDS Sensor": "High-temperature electrode conductivity cell"
+    },
+    "sort_order": 7,
+    "is_published": true
+  },
+  {
+    "id": "sol-8",
+    "slug": "boiler-bag-filter-water-treatment-spares",
+    "title": "Boiler, Bag Filter & Water Spares",
+    "category": "Industrial Spares & Components",
+    "short_description": "Precision-engineered spare parts for boilers, filter bags, cages, membranes, dosing pumps, and steam accessories.",
+    "full_description": "Ensure zero unexpected downtime with Antrixx premium industrial spares. We supply OEM-standard replacement parts including boiler grate bars, economizer tubes, steam valves, Nomex filter bags, filter cages, RO membranes, and dosing pumps.",
+    "icon_name": "Wrench",
+    "hero_image_url": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Fast Dispatch on Critical Stocked Spares",
+      "High-Temperature Nomex & PPS Filter Bags",
+      "Precision-Cast Boiler Grate Bars & Castables",
+      "Industrial Water Treatment Membranes & Dosing Pumps"
+    ],
+    "deliverables": [
+      "Direct OEM-spec component delivery",
+      "Emergency 24-hour dispatch program",
+      "On-site installation and fitting guidance"
+    ],
+    "technical_specs": {
+      "Quality Standard": "ISO / ASME Grade Metallurgy",
+      "Filter Bag Specs": "Singed & Calendered Finish, Hydrophobic Treatment",
+      "Pump Specs": "Metering Dosing Pumps up to 100 LPH"
+    },
+    "sort_order": 8,
+    "is_published": true
+  },
+  {
+    "id": "sol-9",
+    "slug": "steam-energy-loss-diagnosis",
+    "title": "Steam & Energy Loss Diagnosis",
+    "category": "Audits & Diagnostic Services",
+    "short_description": "Data-backed thermal imaging and ultrasonic leak audits uncovering hidden steam traps, insulation, and boiler losses.",
+    "full_description": "Uncover hidden plant energy wastage with quantitative financial accuracy. Antrixx specialized Steam & Energy Loss Diagnosis employs non-invasive thermal imaging cameras, ultrasonic leak detectors, and portable flow meters.",
+    "icon_name": "Search",
+    "hero_image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Non-Invasive Ultrasonic Steam Trap Testing",
+      "FLIR Thermal Imaging of Pipe Insulation & Furnace Walls",
+      "Direct & Indirect Boiler Efficiency Measurement",
+      "Quantified Financial Loss Report & ROI Implementation Plan"
+    ],
+    "deliverables": [
+      "Complete steam trap condition register",
+      "Infrared thermography defect report",
+      "Actionable retrofitting proposal with payback period"
+    ],
+    "technical_specs": {
+      "Audit Tools": "FLIR Thermal Imager, UE Systems Ultrasonic Detector, Portable Flow Meter",
+      "Methodology": "BS 845 / ASME PTC 4.1 Boiler Testing Standard",
+      "Report Turnaround": "Within 5 business days"
+    },
+    "sort_order": 9,
+    "is_published": true
+  },
+  {
+    "id": "sol-10",
+    "slug": "retrofitting-boiler-thermic-fluid-heater",
+    "title": "Retrofitting of Boiler & Thermic Fluid Heater",
+    "category": "Boiler House Control",
+    "short_description": "Upgrade existing boilers and thermic heaters with modern combustion, economizers, and PLC automation without replacement.",
+    "full_description": "Revitalize aging thermal infrastructure without the capital expense of buying a new boiler. Antrixx specializes in retrofitting underperforming boilers and thermic fluid heaters.",
+    "icon_name": "RefreshCw",
+    "hero_image_url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Furnace Conversion for Biomass, Husk & Coal Dual-Fuel Duty",
+      "Installing Condensing Economizers & Waste Heat Recovery",
+      "PLC/HMI Control Upgrades to Eliminate Unburnt Carbon",
+      "Refractory Reconstruction & High-Density Insulation"
+    ],
+    "deliverables": [
+      "Turnkey mechanical overhaul and piping modification",
+      "Pressure vessel inspection compliance support",
+      "Commissioning and thermal efficiency re-certification"
+    ],
+    "technical_specs": {
+      "Efficiency Boost": "5% to 15% thermal efficiency increase",
+      "Payback Period": "Typically 6 to 14 months",
+      "Downtime": "Scheduled minimal maintenance window"
+    },
+    "sort_order": 10,
+    "is_published": true
+  },
+  {
+    "id": "sol-11",
+    "slug": "project-consultation-management",
+    "title": "Project Consultation & Management",
+    "category": "Turnkey Engineering",
+    "short_description": "End-to-end layout planning, balance-of-plant design, equipment selection, and turnkey boiler house commissioning.",
+    "full_description": "From initial greenfield concept to fully operational utility house, Antrixx delivers comprehensive project consultation and turnkey balance-of-plant management.",
+    "icon_name": "Briefcase",
+    "hero_image_url": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "3D Utility Layout Planning & Pipe Sizing Engineering",
+      "Boiler House & Cooling System BOP Custom Integration",
+      "Regulatory Environmental & Boiler Inspection Compliance",
+      "Full Supervision from Civil Foundation to Steam Trial"
+    ],
+    "deliverables": [
+      "Detailed P&ID drawings and 3D CAD models",
+      "Vendor evaluation & equipment procurement assistance",
+      "Site execution management and commissioning certificate"
+    ],
+    "technical_specs": {
+      "Engineering Standard": "IS 2825 / ASME Section I & VIII / IBR",
+      "Coverage": "Boiler House, Chiller Plant, Piping Layouts, Water Treatment",
+      "Project Delivery": "Turnkey EPC or Management Consultancy"
+    },
+    "sort_order": 11,
+    "is_published": true
+  },
+  {
+    "id": "sol-12",
+    "slug": "heat-pump-chilling-bop-management",
+    "title": "Heat Pump & Chilling System BOP Management",
+    "category": "Turnkey Engineering",
+    "short_description": "Integrated Balance-of-Plant management for industrial heat pumps, chilling water loops, and waste heat recovery.",
+    "full_description": "Antrixx manages complete Balance-of-Plant (BOP) engineering for industrial heat pumps and chiller systems (including reference management for systems from Kirloskar Chillers).",
+    "icon_name": "Thermometer",
+    "hero_image_url": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop",
+    "features": [
+      "Industrial Heat Pump & Chilling Water System Integration",
+      "Hydronic Loop Balancing & Secondary Pumping Skids",
+      "Waste Heat Recovery & Combined Heating/Cooling Integration",
+      "Turnkey Testing, Commissioning, and Plant Operator Training"
+    ],
+    "deliverables": [
+      "Primary/Secondary chiller piping & valving skid",
+      "Heat exchanger integration & thermal buffer tanks",
+      "Automated chiller plant management panel"
+    ],
+    "technical_specs": {
+      "System Scope": "Balance-of-Plant Integration & Utility Management",
+      "Temperature Range": "Chilled Water 4°C to Hot Water 85°C",
+      "COP Improvement": "Up to 35% energy reduction vs conventional heating/chilling"
+    },
+    "sort_order": 12,
+    "is_published": true
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ind-1",
+    "slug": "food-processing-fmcg",
+    "title": "Food Processing & FMCG",
+    "description": "Clean steam generation, strict temperature controls, and high-efficiency heat recovery.",
+    "icon_name": "Utensils",
+    "image_url": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop",
+    "key_benefits": [
+      "Contamination-free clean steam",
+      "Automated batch cooking control",
+      "Flash steam recovery"
+    ],
+    "sort_order": 1,
+    "is_published": true
+  },
+  {
+    "id": "ind-2",
+    "slug": "beverages",
+    "title": "Beverages & Bottling",
+    "description": "Integrated chilling BOP management, boiler automation, and pasteurization thermal recovery.",
+    "icon_name": "Coffee",
+    "image_url": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?q=80&w=800&auto=format&fit=crop",
+    "key_benefits": [
+      "Precise pasteurization pressure control",
+      "High COP chilled water loop",
+      "Zero line stops"
+    ],
+    "sort_order": 2,
+    "is_published": true
+  },
+  {
+    "id": "ind-3",
+    "slug": "textile-processing",
+    "title": "Textile & Dyeing Mills",
+    "description": "High-volume process steam, thermic fluid heater automation, and condensate return.",
+    "icon_name": "Layers",
+    "image_url": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=800&auto=format&fit=crop",
+    "key_benefits": [
+      "Stable thermic fluid temperature",
+      "Maximum condensate recovery",
+      "Zero unburnt fuel loss"
+    ],
+    "sort_order": 3,
+    "is_published": true
+  },
+  {
+    "id": "ind-4",
+    "slug": "rice-agro-processing",
+    "title": "Rice & Agro Processing",
+    "description": "Rice husk fuel handling, fluidized bed boiler automation, ash extraction, and parboiling steam.",
+    "icon_name": "Wheat",
+    "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=800&auto=format&fit=crop",
+    "key_benefits": [
+      "Automated rice husk feeding",
+      "Evaporation ratio tracking",
+      "Compliant bag filter emission"
+    ],
+    "sort_order": 4,
+    "is_published": true
+  },
+  {
+    "id": "ind-5",
+    "slug": "pharma-chemical",
+    "title": "Pharma & Chemical",
+    "description": "Precision boiler drum level regulation, pure steam line diagnosis, and automated TDS blowdown.",
+    "icon_name": "FlaskConical",
+    "image_url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=800&auto=format&fit=crop",
+    "key_benefits": [
+      "Strict TDS automated regulation",
+      "Vortex steam flow metering",
+      "Ultrasonic trap audits"
+    ],
+    "sort_order": 5,
+    "is_published": true
+  },
+  {
+    "id": "ind-6",
+    "slug": "heavy-manufacturing",
+    "title": "Heavy Manufacturing",
+    "description": "Turnkey boiler house engineering, multi-plant remote monitoring, and energy loss retrofits.",
+    "icon_name": "Factory",
+    "image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+    "key_benefits": [
+      "Custom balance-of-plant EPC",
+      "Fast dispatch replacement spares",
+      "24/7 technical support"
+    ],
+    "sort_order": 6,
+    "is_published": true
+  }
+]

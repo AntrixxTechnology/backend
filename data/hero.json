@@ -1,0 +1,17 @@
+{
+  "id": "hero-1",
+  "badge": "INDUSTRIAL AUTOMATION & ENERGY SOLUTIONS",
+  "headline": "Engineering Intelligence.",
+  "accent_text": "Powering Industries.",
+  "description": "Antrixx Technology delivers high-efficiency boiler house automation, utility remote monitoring, pollution control systems, and balance-of-plant management tailored for enterprise manufacturing.",
+  "primary_cta_text": "EXPLORE SOLUTIONS",
+  "primary_cta_link": "/solutions",
+  "secondary_cta_text": "DOWNLOAD BROCHURE",
+  "secondary_cta_link": "/resources/downloads",
+  "background_image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1920&auto=format&fit=crop",
+  "scada_plant_efficiency": 94,
+  "scada_steam_flow": 12.45,
+  "scada_fuel_consumption": 850,
+  "scada_energy_saved_mwh": 1240,
+  "is_published": true
+}
