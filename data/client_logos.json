@@ -2,7 +2,7 @@
   {
     "id": "client-1",
     "name": "ITC Limited",
-    "logo_url": "/uploads/client-logos/itc.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/126efa63-2560-4b63-9098-aa087e7d44bc.png",
     "website_url": "https://www.itcportal.com",
     "sort_order": 1,
     "is_published": true
@@ -10,7 +10,7 @@
   {
     "id": "client-2",
     "name": "Haldiram's",
-    "logo_url": "/uploads/client-logos/haldirams.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/5b30fcfe-7518-437d-a9d0-55ce2658229f.png",
     "website_url": "https://www.haldiram.com",
     "sort_order": 2,
     "is_published": true
@@ -18,7 +18,7 @@
   {
     "id": "client-3",
     "name": "CG Chaudhary Group",
-    "logo_url": "/uploads/client-logos/cg-chaudhary.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/8135e9eb-f256-475b-ba29-16fd42554582.png",
     "website_url": "https://www.cgcorpglobal.com",
     "sort_order": 3,
     "is_published": true
@@ -26,7 +26,7 @@
   {
     "id": "client-4",
     "name": "Lalbaba Rice",
-    "logo_url": "/uploads/client-logos/lalbaba.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/d1b366b4-4444-4772-a3cb-c618001815ba.png",
     "website_url": "https://www.lalbabarice.com",
     "sort_order": 4,
     "is_published": true
@@ -34,7 +34,7 @@
   {
     "id": "client-5",
     "name": "Yellow Diamond",
-    "logo_url": "/uploads/client-logos/yellow-diamond.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/d730c4cd-0941-43e0-a989-ebeeeea43063.png",
     "website_url": "https://www.prataapsnacks.com",
     "sort_order": 5,
     "is_published": true
@@ -42,7 +42,7 @@
   {
     "id": "client-6",
     "name": "Nimbus",
-    "logo_url": "/uploads/client-logos/nimbus.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/12a627ac-ce66-4b88-8311-3df9b1e5a1ab.png",
     "website_url": "#",
     "sort_order": 6,
     "is_published": true
@@ -50,7 +50,7 @@
   {
     "id": "client-7",
     "name": "Ram Ram",
-    "logo_url": "/uploads/client-logos/tamtam.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/3916e769-e76c-4f4b-8bf3-0eb80b371756.png",
     "website_url": "#",
     "sort_order": 7,
     "is_published": true
@@ -58,7 +58,7 @@
   {
     "id": "client-8",
     "name": "Prabhuji Pure Food",
-    "logo_url": "/uploads/client-logos/prabhuji.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/7179be94-f75e-4606-b3f9-610a612765eb.png",
     "website_url": "#",
     "sort_order": 8,
     "is_published": true
@@ -66,7 +66,7 @@
   {
     "id": "client-9",
     "name": "Coca-Cola",
-    "logo_url": "/uploads/client-logos/cocacola.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/9601cc33-10c8-4863-991f-b1be5f27c9a8.png",
     "website_url": "https://www.coca-colacompany.com",
     "sort_order": 9,
     "is_published": true
@@ -74,7 +74,7 @@
   {
     "id": "client-10",
     "name": "Kirloskar Chillers",
-    "logo_url": "/uploads/client-logos/kirloskar.png",
+    "logo_url": "https://cjaeubdycgnwgfkbddvb.supabase.co/storage/v1/object/public/general/6bd3e9df-c996-4666-8a2a-1c653f1ad5bd.png",
     "website_url": "https://www.kirloskar.com",
     "sort_order": 10,
     "is_published": true

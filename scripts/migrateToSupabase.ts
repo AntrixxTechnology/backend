@@ -11,10 +11,10 @@ async function migrate() {
   const sql = postgres(connectionString);
   
   try {
-    const schema = fs.readFileSync(sqlFile, 'utf-8');
-    console.log('[Migrate] Running init_schema.sql...');
-    await sql.unsafe(schema);
-    console.log('[Migrate] Schema initialized successfully.');
+    // const schema = fs.readFileSync(sqlFile, 'utf-8');
+    // console.log('[Migrate] Running init_schema.sql...');
+    // await sql.unsafe(schema);
+    // console.log('[Migrate] Schema initialized successfully.');
     
     // Now we must copy all data from LocalJsonRepository to SupabaseRepository
     // Note: getRepository() will return SupabaseRepository because SUPABASE_URL is set in .env

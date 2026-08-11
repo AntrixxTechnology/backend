@@ -9,6 +9,9 @@ export interface HeroContent {
   secondary_cta_text: string;
   secondary_cta_link: string;
   background_image_url?: string;
+  hero_image_1?: string;
+  hero_image_2?: string;
+  hero_image_3?: string;
   scada_plant_efficiency: number;
   scada_steam_flow: number;
   scada_fuel_consumption: number;
