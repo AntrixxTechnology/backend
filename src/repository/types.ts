@@ -183,8 +183,63 @@ export interface SiteSettings {
   email: string;
   address: string;
   business_hours: string;
-  linkedin_url: string;
+  linkedin_url?: string;
   brochure_pdf_url?: string;
+}
+
+export interface BlogPost {
+  id: string;
+  slug: string;
+  title: string;
+  content: string;
+  author: string;
+  featured_image_url?: string;
+  meta_title?: string;
+  meta_description?: string;
+  is_published: boolean;
+  created_at?: string;
+  updated_at?: string;
+}
+
+export interface ErpClient {
+  id: string;
+  company_name: string;
+  contact_person?: string;
+  email?: string;
+  phone?: string;
+  address?: string;
+  status: 'Active' | 'Inactive';
+  created_at?: string;
+  updated_at?: string;
+}
+
+export interface ErpTransaction {
+  id: string;
+  transaction_date: string;
+  type: 'Income' | 'Expense';
+  category: string;
+  amount: number;
+  description?: string;
+  client_id?: string;
+  reference_number?: string;
+  status: 'Pending' | 'Completed' | 'Cancelled';
+  created_at?: string;
+  updated_at?: string;
+}
+
+export interface ErpInvoice {
+  id: string;
+  invoice_number: string;
+  client_id: string;
+  issue_date: string;
+  due_date: string;
+  total_amount: number;
+  amount_paid: number;
+  status: 'Pending' | 'Paid' | 'Overdue' | 'Cancelled';
+  items: any[];
+  notes?: string;
+  created_at?: string;
+  updated_at?: string;
 }
 
 export interface ContentRepository {
@@ -245,4 +300,21 @@ export interface ContentRepository {
 
   getSiteSettings(): Promise<SiteSettings>;
   updateSiteSettings(data: Partial<SiteSettings>): Promise<SiteSettings>;
+
+  // Blogs
+  getBlogs(): Promise<BlogPost[]>;
+  getBlogBySlug(slug: string): Promise<BlogPost | null>;
+  saveBlog(blog: BlogPost): Promise<BlogPost>;
+  deleteBlog(id: string): Promise<boolean>;
+
+  // ERP
+  getErpClients(): Promise<ErpClient[]>;
+  saveErpClient(client: ErpClient): Promise<ErpClient>;
+  deleteErpClient(id: string): Promise<boolean>;
+  getErpTransactions(): Promise<ErpTransaction[]>;
+  saveErpTransaction(tx: ErpTransaction): Promise<ErpTransaction>;
+  deleteErpTransaction(id: string): Promise<boolean>;
+  getErpInvoices(): Promise<ErpInvoice[]>;
+  saveErpInvoice(invoice: ErpInvoice): Promise<ErpInvoice>;
+  deleteErpInvoice(id: string): Promise<boolean>;
 }

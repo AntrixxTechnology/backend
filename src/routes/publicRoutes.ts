@@ -161,6 +161,29 @@ router.get('/site-settings', async (req, res) => {
   }
 });
 
+router.get('/blogs', async (req, res) => {
+  try {
+    const repo = getRepository();
+    const data = await repo.getBlogs();
+    res.json(data.filter((b) => b.is_published));
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.get('/blogs/:slug', async (req, res) => {
+  try {
+    const repo = getRepository();
+    const data = await repo.getBlogBySlug(req.params.slug);
+    if (!data || !data.is_published) {
+      return res.status(404).json({ error: 'Blog post not found' });
+    }
+    res.json(data);
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Profile PDF Download endpoint
 router.get('/resources/downloads/profile-pdf', (req, res) => {
   const pdfPath = path.resolve(process.cwd(), 'public', 'profile.pdf');

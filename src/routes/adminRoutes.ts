@@ -211,5 +211,9 @@ createCrudRoutes('/team', 'getTeam', 'saveTeamMember', 'deleteTeamMember');
 createCrudRoutes('/resources', 'getResources', 'saveResource', 'deleteResource');
 createCrudRoutes('/faqs', 'getFaqs', 'saveFaq', 'deleteFaq');
 createCrudRoutes('/job-openings', 'getJobOpenings', 'saveJobOpening', 'deleteJobOpening');
+createCrudRoutes('/blogs', 'getBlogs', 'saveBlog', 'deleteBlog');
+createCrudRoutes('/erp-clients', 'getErpClients', 'saveErpClient', 'deleteErpClient');
+createCrudRoutes('/erp-transactions', 'getErpTransactions', 'saveErpTransaction', 'deleteErpTransaction');
+createCrudRoutes('/erp-invoices', 'getErpInvoices', 'saveErpInvoice', 'deleteErpInvoice');
 
 export default router;

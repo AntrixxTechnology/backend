@@ -16,6 +16,10 @@ import {
   FaqItem,
   ContactSubmission,
   SiteSettings,
+  BlogPost,
+  ErpClient,
+  ErpTransaction,
+  ErpInvoice,
 } from './types.js';
 
 export class SupabaseRepository implements ContentRepository {
@@ -253,5 +257,65 @@ export class SupabaseRepository implements ContentRepository {
       .select()
       .single();
     return updated;
+  }
+
+  // Blogs
+  async getBlogs(): Promise<BlogPost[]> {
+    const { data } = await this.client.from('blogs').select('*').order('created_at', { ascending: false });
+    return data || [];
+  }
+  async getBlogBySlug(slug: string): Promise<BlogPost | null> {
+    const { data } = await this.client.from('blogs').select('*').eq('slug', slug).single();
+    return data;
+  }
+  async saveBlog(blog: BlogPost): Promise<BlogPost> {
+    const { data } = await this.client.from('blogs').upsert(blog).select().single();
+    return data;
+  }
+  async deleteBlog(id: string): Promise<boolean> {
+    const { error } = await this.client.from('blogs').delete().eq('id', id);
+    return !error;
+  }
+
+  // ERP Clients
+  async getErpClients(): Promise<ErpClient[]> {
+    const { data } = await this.client.from('erp_clients').select('*').order('company_name');
+    return data || [];
+  }
+  async saveErpClient(client: ErpClient): Promise<ErpClient> {
+    const { data } = await this.client.from('erp_clients').upsert(client).select().single();
+    return data;
+  }
+  async deleteErpClient(id: string): Promise<boolean> {
+    const { error } = await this.client.from('erp_clients').delete().eq('id', id);
+    return !error;
+  }
+
+  // ERP Transactions
+  async getErpTransactions(): Promise<ErpTransaction[]> {
+    const { data } = await this.client.from('erp_transactions').select('*').order('transaction_date', { ascending: false });
+    return data || [];
+  }
+  async saveErpTransaction(tx: ErpTransaction): Promise<ErpTransaction> {
+    const { data } = await this.client.from('erp_transactions').upsert(tx).select().single();
+    return data;
+  }
+  async deleteErpTransaction(id: string): Promise<boolean> {
+    const { error } = await this.client.from('erp_transactions').delete().eq('id', id);
+    return !error;
+  }
+
+  // ERP Invoices
+  async getErpInvoices(): Promise<ErpInvoice[]> {
+    const { data } = await this.client.from('erp_invoices').select('*').order('issue_date', { ascending: false });
+    return data || [];
+  }
+  async saveErpInvoice(invoice: ErpInvoice): Promise<ErpInvoice> {
+    const { data } = await this.client.from('erp_invoices').upsert(invoice).select().single();
+    return data;
+  }
+  async deleteErpInvoice(id: string): Promise<boolean> {
+    const { error } = await this.client.from('erp_invoices').delete().eq('id', id);
+    return !error;
   }
 }

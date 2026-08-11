@@ -18,6 +18,10 @@ import {
   FaqItem,
   ContactSubmission,
   SiteSettings,
+  BlogPost,
+  ErpClient,
+  ErpTransaction,
+  ErpInvoice,
 } from './types.js';
 
 export class LocalJsonRepository implements ContentRepository {
@@ -342,22 +346,88 @@ export class LocalJsonRepository implements ContentRepository {
   }
 
   async getSiteSettings(): Promise<SiteSettings> {
-    return this.readJson<SiteSettings>('site_settings.json', {
-      id: 'settings-1',
-      phone_primary: '+91 9748636108',
-      phone_secondary: '+91 9477179885',
-      email: 'antrixxtechnology@gmail.com',
-      address: 'Kolkata, West Bengal, India',
-      business_hours: 'Mon - Sat: 9:00 AM - 7:00 PM IST',
-      linkedin_url: 'https://linkedin.com/company/antrixx-technology',
-      brochure_pdf_url: '/api/resources/downloads/profile-pdf',
-    });
+    const fallback: SiteSettings = {
+      id: 'settings', phone_primary: '', phone_secondary: '', email: '', address: '', business_hours: ''
+    };
+    return Promise.resolve(this.readJson('settings.json', fallback));
   }
 
   async updateSiteSettings(data: Partial<SiteSettings>): Promise<SiteSettings> {
     const current = await this.getSiteSettings();
     const updated = { ...current, ...data };
-    this.writeJson('site_settings.json', updated);
-    return updated;
+    this.writeJson('settings.json', updated);
+    return Promise.resolve(updated);
+  }
+
+  // Blogs
+  async getBlogs(): Promise<BlogPost[]> {
+    return Promise.resolve(this.readJson('blogs.json', []));
+  }
+  async getBlogBySlug(slug: string): Promise<BlogPost | null> {
+    const blogs = await this.getBlogs();
+    return Promise.resolve(blogs.find(b => b.slug === slug) || null);
+  }
+  async saveBlog(blog: BlogPost): Promise<BlogPost> {
+    const blogs = await this.getBlogs();
+    const index = blogs.findIndex(b => b.id === blog.id);
+    if (index >= 0) blogs[index] = blog;
+    else blogs.push(blog);
+    this.writeJson('blogs.json', blogs);
+    return Promise.resolve(blog);
+  }
+  async deleteBlog(id: string): Promise<boolean> {
+    const blogs = await this.getBlogs();
+    const filtered = blogs.filter(b => b.id !== id);
+    if (filtered.length !== blogs.length) {
+      this.writeJson('blogs.json', filtered);
+      return Promise.resolve(true);
+    }
+    return Promise.resolve(false);
+  }
+
+  // ERP
+  async getErpClients(): Promise<ErpClient[]> { return Promise.resolve(this.readJson('erp_clients.json', [])); }
+  async saveErpClient(c: ErpClient): Promise<ErpClient> {
+    const clients = await this.getErpClients();
+    const i = clients.findIndex(x => x.id === c.id);
+    if (i >= 0) clients[i] = c; else clients.push(c);
+    this.writeJson('erp_clients.json', clients);
+    return Promise.resolve(c);
+  }
+  async deleteErpClient(id: string): Promise<boolean> {
+    const clients = await this.getErpClients();
+    const filtered = clients.filter(x => x.id !== id);
+    if (filtered.length !== clients.length) { this.writeJson('erp_clients.json', filtered); return Promise.resolve(true); }
+    return Promise.resolve(false);
+  }
+
+  async getErpTransactions(): Promise<ErpTransaction[]> { return Promise.resolve(this.readJson('erp_transactions.json', [])); }
+  async saveErpTransaction(t: ErpTransaction): Promise<ErpTransaction> {
+    const txs = await this.getErpTransactions();
+    const i = txs.findIndex(x => x.id === t.id);
+    if (i >= 0) txs[i] = t; else txs.push(t);
+    this.writeJson('erp_transactions.json', txs);
+    return Promise.resolve(t);
+  }
+  async deleteErpTransaction(id: string): Promise<boolean> {
+    const txs = await this.getErpTransactions();
+    const filtered = txs.filter(x => x.id !== id);
+    if (filtered.length !== txs.length) { this.writeJson('erp_transactions.json', filtered); return Promise.resolve(true); }
+    return Promise.resolve(false);
+  }
+
+  async getErpInvoices(): Promise<ErpInvoice[]> { return Promise.resolve(this.readJson('erp_invoices.json', [])); }
+  async saveErpInvoice(inv: ErpInvoice): Promise<ErpInvoice> {
+    const invs = await this.getErpInvoices();
+    const i = invs.findIndex(x => x.id === inv.id);
+    if (i >= 0) invs[i] = inv; else invs.push(inv);
+    this.writeJson('erp_invoices.json', invs);
+    return Promise.resolve(inv);
+  }
+  async deleteErpInvoice(id: string): Promise<boolean> {
+    const invs = await this.getErpInvoices();
+    const filtered = invs.filter(x => x.id !== id);
+    if (filtered.length !== invs.length) { this.writeJson('erp_invoices.json', filtered); return Promise.resolve(true); }
+    return Promise.resolve(false);
   }
 }
