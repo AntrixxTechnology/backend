@@ -14,8 +14,12 @@ const PORT = process.env.PORT || 5000;
 
 // CORS configuration
 const allowedOrigins = [
-  process.env.CORS_ORIGIN_FRONTEND || 'http://localhost:5173',
-  process.env.CORS_ORIGIN_ADMIN || 'http://localhost:5174',
+  process.env.CORS_ORIGIN_FRONTEND || 'https://antrixx-mainfrontend.vercel.app',
+  process.env.CORS_ORIGIN_ADMIN || 'https://antrixx-admin.vercel.app',
+  'https://antrixx-mainfrontend.vercel.app',
+  'https://antrixx-admin.vercel.app',
+  'http://localhost:5173',
+  'http://localhost:5174',
   'http://127.0.0.1:5173',
   'http://127.0.0.1:5174',
 ];

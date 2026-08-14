@@ -14,18 +14,30 @@ export class SupabaseStorageProvider implements StorageProvider {
     const ext = path.extname(file.originalname);
     const fileName = `${uuidv4()}${ext}`;
 
-    const { error } = await this.client.storage
-      .from(bucket)
+    let targetBucket = bucket;
+    let { error } = await this.client.storage
+      .from(targetBucket)
       .upload(fileName, file.buffer, {
         contentType: file.mimetype,
         upsert: true,
       });
 
+    if (error && targetBucket !== 'solutions') {
+      targetBucket = 'solutions';
+      const retry = await this.client.storage
+        .from(targetBucket)
+        .upload(fileName, file.buffer, {
+          contentType: file.mimetype,
+          upsert: true,
+        });
+      error = retry.error;
+    }
+
     if (error) {
       throw new Error(`Supabase storage upload error: ${error.message}`);
     }
 
-    const { data: publicUrlData } = this.client.storage.from(bucket).getPublicUrl(fileName);
+    const { data: publicUrlData } = this.client.storage.from(targetBucket).getPublicUrl(fileName);
     return publicUrlData.publicUrl;
   }
 
