@@ -30,18 +30,31 @@ export class SupabaseRepository implements ContentRepository {
   }
 
   async getHero(): Promise<HeroContent> {
-    const { data } = await this.client.from('hero').select('*').limit(1).single();
+    const { data } = await this.client.from('hero').select('*').limit(1).maybeSingle();
     return data;
   }
 
   async updateHero(data: Partial<HeroContent>): Promise<HeroContent> {
-    const { data: updated } = await this.client
-      .from('hero')
-      .update(data)
-      .eq('id', data.id)
-      .select()
-      .single();
-    return updated;
+    const existing = await this.getHero();
+    const targetId = data.id || existing?.id;
+    if (targetId) {
+      const { data: updated, error } = await this.client
+        .from('hero')
+        .update(data)
+        .eq('id', targetId)
+        .select()
+        .single();
+      if (error) throw error;
+      return updated;
+    } else {
+      const { data: created, error } = await this.client
+        .from('hero')
+        .insert(data)
+        .select()
+        .single();
+      if (error) throw error;
+      return created;
+    }
   }
 
   async getStats(): Promise<StatItem[]> {
@@ -135,18 +148,31 @@ export class SupabaseRepository implements ContentRepository {
   }
 
   async getAbout(): Promise<AboutContent> {
-    const { data } = await this.client.from('about').select('*').limit(1).single();
+    const { data } = await this.client.from('about').select('*').limit(1).maybeSingle();
     return data;
   }
 
   async updateAbout(data: Partial<AboutContent>): Promise<AboutContent> {
-    const { data: updated } = await this.client
-      .from('about')
-      .update(data)
-      .eq('id', data.id)
-      .select()
-      .single();
-    return updated;
+    const existing = await this.getAbout();
+    const targetId = data.id || existing?.id;
+    if (targetId) {
+      const { data: updated, error } = await this.client
+        .from('about')
+        .update(data)
+        .eq('id', targetId)
+        .select()
+        .single();
+      if (error) throw error;
+      return updated;
+    } else {
+      const { data: created, error } = await this.client
+        .from('about')
+        .insert(data)
+        .select()
+        .single();
+      if (error) throw error;
+      return created;
+    }
   }
 
   async getTeam(): Promise<TeamMember[]> {
@@ -245,18 +271,31 @@ export class SupabaseRepository implements ContentRepository {
   }
 
   async getSiteSettings(): Promise<SiteSettings> {
-    const { data } = await this.client.from('site_settings').select('*').limit(1).single();
+    const { data } = await this.client.from('site_settings').select('*').limit(1).maybeSingle();
     return data;
   }
 
   async updateSiteSettings(data: Partial<SiteSettings>): Promise<SiteSettings> {
-    const { data: updated } = await this.client
-      .from('site_settings')
-      .update(data)
-      .eq('id', data.id)
-      .select()
-      .single();
-    return updated;
+    const existing = await this.getSiteSettings();
+    const targetId = data.id || existing?.id;
+    if (targetId) {
+      const { data: updated, error } = await this.client
+        .from('site_settings')
+        .update(data)
+        .eq('id', targetId)
+        .select()
+        .single();
+      if (error) throw error;
+      return updated;
+    } else {
+      const { data: created, error } = await this.client
+        .from('site_settings')
+        .insert(data)
+        .select()
+        .single();
+      if (error) throw error;
+      return created;
+    }
   }
 
   // Blogs

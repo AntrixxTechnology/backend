@@ -194,4 +194,25 @@ router.get('/resources/downloads/profile-pdf', (req, res) => {
   }
 });
 
+// Aliases for compatibility
+router.get('/content/hero', async (req, res) => {
+  try {
+    const repo = getRepository();
+    const data = await repo.getHero();
+    res.json(data);
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.get('/content/settings', async (req, res) => {
+  try {
+    const repo = getRepository();
+    const data = await repo.getSiteSettings();
+    res.json(data);
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 export default router;
