@@ -12,6 +12,10 @@ export interface HeroContent {
   hero_image_1?: string;
   hero_image_2?: string;
   hero_image_3?: string;
+  card_2_title?: string;
+  card_2_link?: string;
+  card_3_title?: string;
+  card_3_link?: string;
   scada_plant_efficiency: number;
   scada_steam_flow: number;
   scada_fuel_consumption: number;
@@ -30,6 +34,26 @@ export interface StatItem {
   is_published: boolean;
 }
 
+export interface SolutionSubProduct {
+  id: string;
+  name: string;
+  image_url: string;
+  description?: string;
+  technical_specs: Record<string, string>;
+}
+
+export interface SolutionScopeCard {
+  title: string;
+  description: string;
+  icon_name?: string;
+}
+
+export interface SolutionBadge {
+  title: string;
+  desc: string;
+  icon_name?: string;
+}
+
 export interface SolutionItem {
   id: string;
   slug: string;
@@ -39,6 +63,10 @@ export interface SolutionItem {
   full_description: string;
   icon_name: string;
   hero_image_url?: string;
+  badge_highlights?: SolutionBadge[];
+  scope_cards?: SolutionScopeCard[];
+  products_and_services?: string[];
+  sub_products?: SolutionSubProduct[];
   features: string[];
   deliverables: string[];
   technical_specs?: Record<string, string>;

@@ -26,13 +26,7 @@ const allowedOrigins = [
 
 app.use(
   cors({
-    origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV !== 'production') {
-        callback(null, true);
-      } else {
-        callback(new Error('CORS policy violation'));
-      }
-    },
+    origin: true,
     credentials: true,
   })
 );

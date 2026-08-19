@@ -2,68 +2,232 @@
   {
     "id": "sol-1",
     "slug": "utility-remote-monitoring",
-    "title": "Utility Remote Monitoring System",
-    "category": "IoT & Digital Utilities",
-    "short_description": "Real-time telemetry and cloud analytics monitoring plant steam flow, boiler efficiency, and utility health 24/7.",
-    "full_description": "Our Utility Remote Monitoring System provides enterprise plant managers with continuous operational intelligence. By integrating high-precision sensor arrays, field PLCs, and cloud-enabled SCADA telemetry, Antrixx enables real-time tracking of steam generation, fuel burn rates, flue gas temperatures, and utility power draw.",
-    "icon_name": "Activity",
+    "title": "RETRO FITTING OF BOILER & THERMIC FLUID HEATER",
+    "category": "SMART UPGRADES FOR SMARTER HEATING",
+    "short_description": "We specialize in retrofitting old or underperformance boilers and thermic fluid heaters with modern energy-saving modules, economizers, auto combustion, and emission controls.",
+    "full_description": "Our Retrofitting services include furnace modification for different fuels, PLC HMI base combustion control systems to reduce unburnt fuel loss, economizer & air pre-heater installation, TDS blowdown automation, refractory enhancement, and integration with condensate & flash steam recovery systems.",
+    "icon_name": "Flame",
     "hero_image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
+    "badge_highlights": [
+      {
+        "title": "High Efficiency",
+        "desc": "Maximum fuel conversion and minimum stack losses",
+        "icon_name": "ShieldCheck"
+      },
+      {
+        "title": "Reliable Operation",
+        "desc": "Continuous industrial uptime without unexpected trips",
+        "icon_name": "Cpu"
+      },
+      {
+        "title": "Sustainable Solutions",
+        "desc": "Cleaner combustion with reduced carbon emissions",
+        "icon_name": "Leaf"
+      }
+    ],
+    "scope_cards": [
+      {
+        "title": "Furnace Modification & Combustion Control",
+        "description": "Retrofitting manual firing systems with computerized auto-combustion, VFD draft modulation, and multi-fuel grate modifications to reduce unburnt losses by up to 15%.",
+        "icon_name": "Flame"
+      },
+      {
+        "title": "Waste Heat Recovery (Economizer & APH)",
+        "description": "Installing custom-engineered finned-tube Economizers and Air Preheaters in flue gas paths to recover waste heat, raising feed water temp and cutting fuel consumption by 5-8%.",
+        "icon_name": "Layers"
+      },
+      {
+        "title": "TDS Auto-Blowdown & Refractory Upgrades",
+        "description": "Continuous conductivity sensing with motorized blowdown valves and high-density ceramic fiber insulation to eliminate heat dissipation and scale buildup.",
+        "icon_name": "Zap"
+      }
+    ],
+    "products_and_services": [
+      "Furnace Modification for Multi-Fuel Firing",
+      "Custom Economizer & Air Preheater Retrofit",
+      "PLC & HMI Auto-Combustion Automation",
+      "High-Density Ceramic Refractory Upgrades",
+      "Automated TDS Continuous Blowdown Systems",
+      "Draft Optimization with VFD-driven ID/FD Fans",
+      "Flash Steam Recovery Unit Integration",
+      "Thermic Fluid Heater Coil Replacement",
+      "Deaerator & Feed Tank Modernization",
+      "Safety Interlock & Fuel Shut-off Skid",
+      "Comprehensive Thermal Efficiency Audits",
+      "Turnkey Project Erection & Commissioning"
+    ],
+    "sub_products": [
+      {
+        "id": "rf-1",
+        "name": "Custom Finned-Tube Economizer Unit",
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop",
+        "description": "Heavy duty heat exchanger capturing exhaust flue gas heat to preheat boiler feed water.",
+        "technical_specs": {
+          "Application": "Steam Boilers & Thermic Fluid Heaters",
+          "Tube Material": "SA 210 Gr. A1 / Seamless Carbon Steel",
+          "Fin Type": "Helical Crimped / Solid / Serrated Steel Fins",
+          "Flue Gas Temp Drop": "40 °C to 80 °C reduction",
+          "Efficiency Gain": "3% to 6% fuel savings",
+          "Design Pressure": "Up to 32 Bar",
+          "Testing Standard": "IBR (Indian Boiler Regulations) Approved"
+        }
+      },
+      {
+        "id": "rf-2",
+        "name": "Auto-Combustion & Draft Control Panel",
+        "image_url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=800&auto=format&fit=crop",
+        "description": "Integrated PLC panel with closed-loop furnace pressure and fuel-to-air ratio modulation.",
+        "technical_specs": {
+          "PLC Controller": "Siemens S7-1200 / Allen Bradley Micro850",
+          "HMI Screen": "7-inch / 10-inch Industrial Color Touch HMI",
+          "Draft Sensor": "High-accuracy differential pressure transmitter (±0.5 mm WC)",
+          "VFD Support": "Schneider / Danfoss / ABB synchronized drives",
+          "Communication": "Modbus RS485 / Ethernet IP / SCADA ready"
+        }
+      },
+      {
+        "id": "rf-3",
+        "name": "TDS Auto Blowdown & Flash Recovery Skid",
+        "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop",
+        "description": "Automated boiler water conductivity management system preventing scale and saving hot water.",
+        "technical_specs": {
+          "Sensor Type": "High temperature & pressure conductivity electrode",
+          "Actuator Valve": "Electric / Pneumatic motorized modulating valve",
+          "Flash Vessel": "IBR certified pressure vessel with steam separator",
+          "TDS Control Range": "1000 – 6000 PPM customizable setpoint",
+          "Payback Period": "3 to 6 months through heat & water recovery"
+        }
+      }
+    ],
     "features": [
-      "24/7 Cloud Telemetry & Mobile Dashboard",
-      "Automated Alert Triggers via SMS & Email",
-      "Historical Trend Analysis & Fuel-to-Steam Ratio Logging",
-      "Multi-Plant Fleet Management Integration"
+      "Furnace modification for multi-fuel flexibility",
+      "Economizer & Air Pre-heater waste heat recovery",
+      "Automated closed-loop draft and combustion control",
+      "TDS continuous blowdown and flash steam recovery"
     ],
     "deliverables": [
-      "Plug-and-play IoT gateway panel installation",
-      "Custom SCADA HMI dashboard configuration",
-      "Monthly thermal efficiency audit reports"
+      "Turnkey mechanical fabrication & ducting",
+      "PLC automation panel with touchscreen HMI",
+      "IBR approval documentation and commissioning report"
     ],
     "technical_specs": {
-      "Communication": "Modbus RS485 / Ethernet / MQTT",
-      "Data Logging Rate": "Every 1 second",
-      "Sensor Compatibility": "Steam Flow, Pressure, Temp, O2, Load Cell"
+      "Boiler Capacity Range": "1 TPH to 25 TPH Boilers & Heaters",
+      "Efficiency Improvement": "Guaranteed 4% to 10% fuel reduction",
+      "Compliance": "Meets IBR & CPCB pollution norms"
     },
     "sort_order": 1,
     "is_published": true
   },
   {
     "id": "sol-2",
-    "slug": "boiler-automation",
-    "title": "Boiler Automation & Draft Control",
-    "category": "Boiler House Control",
-    "short_description": "Integrated Auto Combustion, Auto Draft, and Drum Level Control systems for precision firing and fuel reduction.",
-    "full_description": "Transform manual boiler operations into a self-optimizing thermal asset. Antrixx Boiler Automation delivers complete closed-loop control over furnace draft, forced/induced draft fan speeds, fuel feeder rates, and drum level water modulation.",
-    "icon_name": "Gauge",
-    "hero_image_url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=1200&auto=format&fit=crop",
-    "features": [
-      "Closed-Loop Auto Combustion Control",
-      "PID Drum Level Modulation (3-Element Control)",
-      "Furnace Draft Control via VFD-driven ID/FD Fans",
-      "Touchscreen HMI with Intuitive SCADA Synoptics"
-    ],
-    "deliverables": [
-      "Custom PLC & VFD Automation Panel",
-      "Differential Pressure & Level Transmitters",
-      "O2 Flue Gas Analyzer Integration"
-    ],
-    "technical_specs": {
-      "PLC Platform": "Siemens S7-1200 / Allen Bradley",
-      "Draft Accuracy": "±0.5 mm WC",
-      "VFD Response": "< 200 ms dynamic loop response"
-    },
-    "sort_order": 2,
-    "is_published": true
-  },
-  {
-    "id": "sol-3",
     "slug": "pollution-control-equipment",
-    "title": "Pollution Control Equipment",
-    "category": "Environmental & Emission Systems",
-    "short_description": "High-efficiency Bag Filters, Cyclone Dust Collectors, and Wet Scrubbers ensuring clean, compliant flue gas emissions.",
-    "full_description": "Ensure total environmental compliance while maintaining optimal boiler draft performance. Antrixx engineers and supplies heavy-duty flue gas cleaning systems including Cyclone Dust Collectors, Pulse-Jet Bag Filters (1.0 Air-to-Cloth ratio), and Spray-type Wet Scrubbers.",
+    "title": "POLLUTION CONTROL EQUIPMENT",
+    "category": "ENVIRONMENTAL & EMISSION SYSTEMS",
+    "short_description": "Advanced, reliable & energy-efficient solutions for clean air, regulatory compliance and sustainable tomorrow.",
+    "full_description": "We design, engineer and deliver advanced air pollution control systems that ensure cleaner air, regulatory compliance and sustainable industrial operations.",
     "icon_name": "Wind",
     "hero_image_url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=1200&auto=format&fit=crop",
+    "badge_highlights": [
+      {
+        "title": "High Efficiency",
+        "desc": "Maximum performance with low emissions",
+        "icon_name": "ShieldCheck"
+      },
+      {
+        "title": "Reliable Operation",
+        "desc": "Built for continuous industrial performance",
+        "icon_name": "Cpu"
+      },
+      {
+        "title": "Sustainable Solutions",
+        "desc": "Cleaner environment, better tomorrow",
+        "icon_name": "Leaf"
+      }
+    ],
+    "scope_cards": [
+      {
+        "title": "Cyclone Dust Collector",
+        "description": "Cyclone dust collectors use centrifugal force to separate and collect coarse and fine particulate matter from industrial gases. Designed for high dust loading, low maintenance and continuous operation in heavy-duty environments.",
+        "icon_name": "Wind"
+      },
+      {
+        "title": "Bag Filter (Baghouse)",
+        "description": "Bag filter systems capture fine particles from gas streams using high-efficiency filter media (baghouse). They ensure clean air discharge, high collection efficiency, and compliance with environmental standards.",
+        "icon_name": "Layers"
+      },
+      {
+        "title": "Spray Type Wet Scrubber",
+        "description": "Wet scrubbers remove dust, gas, and pollutants using water sprays and scrubbing action. Ideal for handling acidic, alkaline and toxic gases with high removal efficiency and robust performance.",
+        "icon_name": "Droplets"
+      }
+    ],
+    "products_and_services": [
+      "Cyclone Dust Collector Systems",
+      "System Design & Engineering",
+      "Spare Parts & Accessories",
+      "Bag Filter / Baghouse Systems",
+      "Installation & Commissioning",
+      "Performance Optimization",
+      "Spray Type Wet Scrubber Systems",
+      "Retrofit & Upgradation",
+      "Pollution Monitoring Solutions",
+      "ESP (Electrostatic Precipitator) Systems",
+      "Operation & Maintenance",
+      "Turnkey Project Execution",
+      "Ducting Design & Fabrication",
+      "AMC & Annual Maintenance Contracts"
+    ],
+    "sub_products": [
+      {
+        "id": "pce-1",
+        "name": "Cyclone Dust Collector",
+        "image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+        "description": "High throughput centrifugal cyclone separators designed for heavy coarse particulate capture.",
+        "technical_specs": {
+          "Application": "Cement, Power, Steel, Food, Chemical, Mining & more",
+          "Gas Flow Capacity": "500 – 500,000 CMH",
+          "Collection Efficiency": "85% - 95% (for particulate size > 5 microns)",
+          "Inlet Dust Load": "Up to 50 g/Nm³",
+          "Operating Temperature": "Up to 400 °C",
+          "Material of Construction": "Mild Steel / SS / Special Alloys",
+          "Design Type": "Standard / High Efficiency",
+          "Pressure Drop": "800 – 1500 Pa",
+          "Customization": "Available as per process requirement"
+        }
+      },
+      {
+        "id": "pce-2",
+        "name": "Pulse-Jet Bag Filter (Baghouse)",
+        "image_url": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop",
+        "description": "Pulse-Jet Baghouse systems engineered at guaranteed 1.0 Air-to-Cloth ratio for sub-micron capture.",
+        "technical_specs": {
+          "Application": "Boiler Flue Gas, Cement, Agro Mills, Steel & Foundry",
+          "Air-to-Cloth Ratio": "1.0 m/min (Strict Design Limit)",
+          "Collection Efficiency": "99.8% down to 1 micron (< 30 mg/Nm³)",
+          "Filter Bag Material": "Nomex / PPS / Fiberglass with PTFE Membrane",
+          "Cleaning Mechanism": "Pulse-Jet Solenoid Controller (Online/Offline)",
+          "Operating Temperature": "Up to 260 °C (with high-temp bags)",
+          "Casing Construction": "Corrosion-resistant heavy gauge MS / SS316",
+          "Customization": "Modular hopper and rotary air-lock options"
+        }
+      },
+      {
+        "id": "pce-3",
+        "name": "Spray Type Wet Scrubber",
+        "image_url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=800&auto=format&fit=crop",
+        "description": "Chemical gas neutralizing scrubber towers with non-clogging high-pressure spray nozzles.",
+        "technical_specs": {
+          "Application": "Chemical, Fertilizer, Boiler Flue Gas & Acid Fumes",
+          "Scrubbing Efficiency": "95% - 99% for SOx, NOx and Acid Mists",
+          "Spray Nozzle Type": "High-pressure non-clogging Spiral Spray Nozzles",
+          "Liquid-to-Gas Ratio": "0.5 to 3.0 L/m³",
+          "Material of Construction": "SS316L / FRP / Rubber-Lined MS",
+          "Slurry Handling": "Recirculation pump with dual filter basket",
+          "Pressure Drop": "500 – 1200 Pa",
+          "Customization": "Multi-stage venturi + spray tower options"
+        }
+      }
+    ],
     "features": [
       "Cyclone Dust Collectors with Heavy-Duty Abrasion Liners",
       "Pulse-Jet Bag Filters guaranteed at 1.0 Air-to-Cloth Ratio",
@@ -80,18 +244,93 @@
       "Filter Bag Material": "Nomex / PPS / Fiberglass with PTFE Membrane",
       "Collection Efficiency": "99.8% down to 1 micron"
     },
-    "sort_order": 3,
+    "sort_order": 2,
     "is_published": true
   },
   {
-    "id": "sol-4",
-    "slug": "ash-handling-system",
-    "title": "Ash Handling Systems",
-    "category": "Solid Material Handling",
-    "short_description": "Clean, enclosed Low Pressure and Vacuum Ash Conveying systems for rapid bed-ash and fly-ash transfer.",
+    "id": "sol-3",
+    "slug": "ash-handling-systems",
+    "title": "ASH HANDLING SYSTEMS",
+    "category": "SOLID MATERIAL HANDLING",
+    "short_description": "Clean, enclosed Low Pressure and Vacuum Ash Conveying systems for rapid bed-ash and fly-ash transfer without dust emission.",
     "full_description": "Antrixx Ash Handling Systems eliminate dust generation, manual labor, and thermal hazards associated with boiler ash removal. We offer Low Pressure Pneumatic Conveying and fully enclosed Vacuum Ash Conveying Systems.",
     "icon_name": "Layers",
     "hero_image_url": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
+    "badge_highlights": [
+      {
+        "title": "100% Dust-Free",
+        "desc": "Enclosed vacuum transfer prevents plant contamination",
+        "icon_name": "ShieldCheck"
+      },
+      {
+        "title": "Continuous Operation",
+        "desc": "Automated sequential cycling without manual handling",
+        "icon_name": "Cpu"
+      },
+      {
+        "title": "Heavy-Duty Basalt Line",
+        "desc": "Wear-resistant ceramic elbows for long service life",
+        "icon_name": "Layers"
+      }
+    ],
+    "scope_cards": [
+      {
+        "title": "Vacuum Pneumatic Ash Conveying",
+        "description": "High-vacuum exhausters extract dry fly ash from economizer, air preheater, and bag filter hoppers into an elevated storage silo.",
+        "icon_name": "Wind"
+      },
+      {
+        "title": "Submerged Bottom Ash Scraper (Wet/Dry)",
+        "description": "Heavy-duty cast steel chain conveyors quench and continuously evacuate hot furnace bottom ash safely from under the boiler.",
+        "icon_name": "Layers"
+      },
+      {
+        "title": "Ash Conditioning & Silo Unloading Chute",
+        "description": "Automated twin-shaft ash pug mills and telescopic loading spouts ensure dust-free loading into transport trucks.",
+        "icon_name": "Truck"
+      }
+    ],
+    "products_and_services": [
+      "Dense Phase Pneumatic Ash Conveying",
+      "Lean Phase Vacuum Ash Extraction",
+      "Submerged Scraper Chain Conveyors",
+      "Ash Storage Silos with Fluidizing Pads",
+      "Rotary Air Lock Valves & Knife Gates",
+      "Twin Shaft Ash Conditioners (Pug Mills)",
+      "Telescopic Dustless Loading Spouts",
+      "Basalt / Hardened Cast Iron Pipe Bends",
+      "Automated PLC Sequence Control Panels",
+      "Silo Vent Bag Filters & Safety Valves",
+      "Turnkey Mechanical Installation",
+      "Emergency Ash Clearing Systems"
+    ],
+    "sub_products": [
+      {
+        "id": "ash-1",
+        "name": "Dense Phase Pneumatic Ash Transporter",
+        "image_url": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop",
+        "description": "Pressure vessel system moving high-density ash batches with low air velocity.",
+        "technical_specs": {
+          "Conveying Capacity": "2 to 30 TPH",
+          "Conveying Distance": "Up to 500 meters",
+          "Operating Pressure": "2.5 to 5.0 Bar",
+          "Pipe Material": "Heavy duty seamless carbon steel with basalt elbows",
+          "Control System": "PLC with pressure transmitter feedback"
+        }
+      },
+      {
+        "id": "ash-2",
+        "name": "Ash Storage Silo & Conditioner Skid",
+        "image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+        "description": "Elevated carbon steel storage silo with aeration pads and dustless unloading pug mill.",
+        "technical_specs": {
+          "Silo Capacity": "20 m³ to 500 m³ capacity",
+          "Discharge Mechanism": "Twin-shaft continuous mixer conditioner",
+          "Vent Filter": "Top-mounted reverse pulse jet bag filter",
+          "Safety Features": "High & low radar level sensors with pressure relief valve"
+        }
+      }
+    ],
     "features": [
       "Clean, Dust-Free Vacuum Ash Extraction",
       "Low Pressure Pneumatic Conveying for Heavy Bed Ash",
@@ -108,18 +347,92 @@
       "Operating Vacuum": "-400 to -600 mbar",
       "Material": "Basalt-lined / Hardened Cast Iron Elbows"
     },
-    "sort_order": 4,
+    "sort_order": 3,
     "is_published": true
   },
   {
-    "id": "sol-5",
-    "slug": "fuel-handling-system",
-    "title": "Fuel Handling Systems",
-    "category": "Solid Material Handling",
+    "id": "sol-4",
+    "slug": "fuel-handling-systems",
+    "title": "FUEL HANDLING SYSTEMS",
+    "category": "SOLID MATERIAL HANDLING",
     "short_description": "End-to-end solid fuel receiving, crushing, screening, storage, and furnace feeding for husk, briquettes, and coal.",
     "full_description": "Uninterrupted fuel supply is essential for continuous steam production. Antrixx delivers rugged, automated fuel handling systems designed for solid fuels including rice husk, wood chips, biomass briquettes, and coal.",
     "icon_name": "Truck",
     "hero_image_url": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1200&auto=format&fit=crop",
+    "badge_highlights": [
+      {
+        "title": "High Throughput",
+        "desc": "Conveying up to 50 tons per hour seamlessly",
+        "icon_name": "Truck"
+      },
+      {
+        "title": "PLC Synchronized",
+        "desc": "Automated feeder speed sync with boiler steam demand",
+        "icon_name": "Cpu"
+      },
+      {
+        "title": "Zero Clogging",
+        "desc": "Optimized hopper angles and anti-bridging rotary devices",
+        "icon_name": "ShieldCheck"
+      }
+    ],
+    "scope_cards": [
+      {
+        "title": "Fuel Unloading & Receiving Hoppers",
+        "description": "Heavy-duty ground receiving bunkers with grizzly screens and hydraulic tipping platforms for fast bulk unloading.",
+        "icon_name": "Truck"
+      },
+      {
+        "title": "Mechanical Conveying & Elevators",
+        "description": "Enclosed trough belt conveyors, bucket elevators, and screw feeders transporting fuel into overhead day bunkers.",
+        "icon_name": "Layers"
+      },
+      {
+        "title": "Variable Speed Furnace Feeders",
+        "description": "VFD-driven multi-screw feeder assemblies modulated dynamically by boiler combustion controller.",
+        "icon_name": "Zap"
+      }
+    ],
+    "products_and_services": [
+      "Ground Receiving Hoppers & Grizzly Screens",
+      "Enclosed Trough Belt Conveyor Systems",
+      "Heavy Duty Centrifugal Bucket Elevators",
+      "Vibrating Screens & Fuel Sizers",
+      "Cross-Belt Magnetic Separators",
+      "Overhead Day Storage Bunkers",
+      "Variable Speed Multi-Screw Furnace Feeders",
+      "Pneumatic Fuel Spreader Distributors",
+      "Dust Suppression Spray Systems",
+      "Integrated MCC & PLC Electrical Panels",
+      "Emergency Pull Cord & Belt Sway Switches",
+      "Turnkey Mechanical Fabrication"
+    ],
+    "sub_products": [
+      {
+        "id": "fuel-1",
+        "name": "Heavy Duty Trough Belt Conveyor",
+        "image_url": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop",
+        "description": "Enclosed conveyor gallery with vulcanized rubber belting and impact idlers.",
+        "technical_specs": {
+          "Belt Width": "500 mm to 1200 mm",
+          "Conveying Capacity": "10 to 100 TPH",
+          "Drive Type": "Shaft mounted geared motor with backstop",
+          "Safety Sensors": "Pull cord, belt sway, zero speed switch"
+        }
+      },
+      {
+        "id": "fuel-2",
+        "name": "PLC Synchronized Multi-Screw Furnace Feeder",
+        "image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+        "description": "Variable-speed screw feeder assembly injecting solid biomass evenly into boiler furnace.",
+        "technical_specs": {
+          "Screw Diameter": "200 mm to 450 mm Hardfaced flights",
+          "Feed Rate Control": "Inverter-driven 0.5 to 15 TPH",
+          "Cooling": "Water-cooled jackets at furnace entry",
+          "Motor Power": "3.7 kW to 15 kW TEFC Motor"
+        }
+      }
+    ],
     "features": [
       "Heavy-Duty Storage Hoppers & Storage Silos",
       "Belt, Screw, and Drag Chain Conveyor Assemblies",
@@ -136,18 +449,92 @@
       "Throughput": "Up to 50 TPH handling capacity",
       "Feeder Drive": "VFD synchronized with combustion controller"
     },
-    "sort_order": 5,
+    "sort_order": 4,
     "is_published": true
   },
   {
-    "id": "sol-6",
-    "slug": "steam-fuel-tracker",
-    "title": "Steam Fuel Tracker System",
-    "category": "IoT & Digital Utilities",
+    "id": "sol-5",
+    "slug": "steam-fuel-tracker-system",
+    "title": "STEAM FUEL TRACKER SYSTEM",
+    "category": "IOT & DIGITAL UTILITIES",
     "short_description": "Smart data logging system combining industry load cells and steam flow meters to calculate real-time steam-to-fuel ratios.",
     "full_description": "The STEAM FUEL TRACKER is Antrixx proprietary intelligent data logging platform. Utilizing heavy-duty strain gauge load cells under the fuel measuring bunker alongside vortex steam flow meters, the system calculates exact Steam-to-Fuel Ratios in real time.",
     "icon_name": "Cpu",
     "hero_image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "badge_highlights": [
+      {
+        "title": "Real-time Evaporation Ratio",
+        "desc": "Instant Kg Steam per Kg Fuel calculation",
+        "icon_name": "Cpu"
+      },
+      {
+        "title": "Shift Audit Reports",
+        "desc": "Automated shift-wise fuel consumption printouts",
+        "icon_name": "ShieldCheck"
+      },
+      {
+        "title": "Cloud Dashboard",
+        "desc": "Remote smartphone live viewing & alert triggers",
+        "icon_name": "Activity"
+      }
+    ],
+    "scope_cards": [
+      {
+        "title": "Bunker Load Cell Gravimetric Weighing",
+        "description": "High-precision IP68 shear beam load cells mounted under fuel bunker for continuous real-time fuel weight logging.",
+        "icon_name": "Cpu"
+      },
+      {
+        "title": "High-Accuracy Steam Vortex Flowmeter",
+        "description": "IBR certified vortex mass flow meter with integrated density & temperature compensation for precise steam tally.",
+        "icon_name": "Activity"
+      },
+      {
+        "title": "SCADA Telemetry & Shift Reporting",
+        "description": "7-inch touchscreen HMI computing dynamic evaporation ratio and transmitting logs to plant cloud dashboard.",
+        "icon_name": "Zap"
+      }
+    ],
+    "products_and_services": [
+      "Weighing Bunker Structural Mounting Kit",
+      "IP68 Stainless Steel Strain Gauge Load Cells",
+      "Vortex Steam Mass Flow Meter Stations",
+      "Antrixx Smart Tracker PLC Controller",
+      "7-Inch Full Color Touchscreen HMI Unit",
+      "IoT Cloud Telemetry Gateway Module",
+      "Daily / Shift-wise Consumption Report Generator",
+      "SMS & Email Anomaly Alert Dispatcher",
+      "Feed Water Flowmeter Integration",
+      "Flue Gas O2 & Temperature Logger",
+      "Calibration & Verification Services",
+      "Remote Android / iOS Monitoring App"
+    ],
+    "sub_products": [
+      {
+        "id": "sft-1",
+        "name": "Fuel Measuring Bunker with Strain Load Cells",
+        "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+        "description": "Precision weight measuring fuel skid with anti-vibration mountings.",
+        "technical_specs": {
+          "Weighing Accuracy": "±0.1% of Full Scale",
+          "Load Cell Rating": "4x 2000 Kg IP68 Stainless Steel Cells",
+          "Junction Box": "Cast Aluminum IP67 Summing Box with surge protection",
+          "Sampling Rate": "50 samples per second digital filtering"
+        }
+      },
+      {
+        "id": "sft-2",
+        "name": "Antrixx Steam Flow Mass Metering Station",
+        "image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop",
+        "description": "Flanged vortex shedding flowmeter with integrated RTD and pressure compensation.",
+        "technical_specs": {
+          "Line Sizes": "DN25 to DN300 (1\" to 12\")",
+          "Flow Accuracy": "±0.75% for steam and gas",
+          "Pressure Rating": "ANSI 150# / 300# / IBR Approved",
+          "Output": "4-20mA HART, RS485 Modbus RTU"
+        }
+      }
+    ],
     "features": [
       "Precision Load-Cell Weight Sensing under Bunker",
       "Vortex Steam Flow Mass Meter Integration",
@@ -164,18 +551,92 @@
       "Flow Accuracy": "±1.0% of reading",
       "Display": "7-inch TFT 65K color touchscreen"
     },
-    "sort_order": 6,
+    "sort_order": 5,
     "is_published": true
   },
   {
-    "id": "sol-7",
+    "id": "sol-6",
     "slug": "steam-engineering-automation",
-    "title": "Steam Engineering Automation",
-    "category": "Steam & Thermal Systems",
+    "title": "STEAM ENGINEERING AUTOMATION",
+    "category": "STEAM & THERMAL SYSTEMS",
     "short_description": "Smart trap monitoring, automated blowdown, flash steam recovery, PRVs, and motorized steam control valves.",
     "full_description": "Maximize thermal output while neutralizing steam distribution losses across process plants. Antrixx Steam Engineering Automation encompasses advanced steam flow metering, thermic fluid heat meters, automated boiler TDS blowdown control, flash steam recovery units, and pressure reducing stations.",
     "icon_name": "Zap",
     "hero_image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
+    "badge_highlights": [
+      {
+        "title": "Zero Steam Loss",
+        "desc": "Precision pressure reducing stations & smart traps",
+        "icon_name": "ShieldCheck"
+      },
+      {
+        "title": "Energy Recovery",
+        "desc": "Flash steam vessel re-injects heat into feed tank",
+        "icon_name": "Flame"
+      },
+      {
+        "title": "Closed-Loop Accuracy",
+        "desc": "Pneumatic modulating valves with digital positioners",
+        "icon_name": "Cpu"
+      }
+    ],
+    "scope_cards": [
+      {
+        "title": "Pressure Reducing & Desuperheating Stations",
+        "description": "Pre-assembled PRV and PRDS skids delivering precise dry saturated steam at constant pressure to process headers.",
+        "icon_name": "Zap"
+      },
+      {
+        "title": "Flash Steam Recovery & Condensate Pumps",
+        "description": "Flash vessels and mechanical steam-powered condensate return pumps recovering 100% of high-enthalpy boiler water.",
+        "icon_name": "Layers"
+      },
+      {
+        "title": "Smart Steam Trap Monitoring & Surveys",
+        "description": "Ultrasonic & thermal trap monitoring arrays eliminating steam loss and preventing water hammer hazards.",
+        "icon_name": "Activity"
+      }
+    ],
+    "products_and_services": [
+      "Pre-Fabricated PRV & PRDS Skids",
+      "Pneumatically Actuated Control Valves",
+      "Flash Steam Recovery Vessels",
+      "Mechanical Condensate Return Pumps",
+      "Thermodynamic & Inverted Bucket Steam Traps",
+      "Thermic Fluid Energy & Heat Meters",
+      "Continuous Boiler TDS Blowdown Stations",
+      "Deaerator & Feed Tank Vent Condensers",
+      "Steam Safety Relief Valves & Gauges",
+      "Comprehensive Steam Piping Loss Surveys",
+      "Insulation Jacket Fabrication",
+      "Turnkey Steam Piping & Commissioning"
+    ],
+    "sub_products": [
+      {
+        "id": "sea-1",
+        "name": "Pre-Engineered PRV Station Skid",
+        "image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+        "description": "Complete steam pressure reduction station with strainer, bypass, and safety valve.",
+        "technical_specs": {
+          "Inlet Pressure": "Up to 32 Bar",
+          "Outlet Pressure Range": "0.5 to 10 Bar (precisely regulated)",
+          "Actuation": "Self-acting direct diaphragm / Pneumatic modulating",
+          "Turndown Ratio": "Up to 20:1"
+        }
+      },
+      {
+        "id": "sea-2",
+        "name": "Flash Steam Recovery & Condensate Unit",
+        "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop",
+        "description": "Flash vessel separator capturing low-pressure flash steam from high pressure condensate.",
+        "technical_specs": {
+          "Vessel Rating": "IBR Certified Carbon Steel / SS304",
+          "Condensate Capacity": "500 to 10,000 Kg/hr",
+          "Energy Savings": "8% to 15% reduction in boiler fuel bills",
+          "Accessories": "Level gauge, safety valve, and internal demister pad"
+        }
+      }
+    ],
     "features": [
       "Boiler TDS Auto-Blowdown Control Systems",
       "Flash Steam Recovery Units & Condensate Polishing",
@@ -192,147 +653,7 @@
       "Control Valve Duty": "Class VI Shut-off pneumatic actuation",
       "TDS Sensor": "High-temperature electrode conductivity cell"
     },
-    "sort_order": 7,
-    "is_published": true
-  },
-  {
-    "id": "sol-8",
-    "slug": "boiler-bag-filter-water-treatment-spares",
-    "title": "Boiler, Bag Filter & Water Spares",
-    "category": "Industrial Spares & Components",
-    "short_description": "Precision-engineered spare parts for boilers, filter bags, cages, membranes, dosing pumps, and steam accessories.",
-    "full_description": "Ensure zero unexpected downtime with Antrixx premium industrial spares. We supply OEM-standard replacement parts including boiler grate bars, economizer tubes, steam valves, Nomex filter bags, filter cages, RO membranes, and dosing pumps.",
-    "icon_name": "Wrench",
-    "hero_image_url": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
-    "features": [
-      "Fast Dispatch on Critical Stocked Spares",
-      "High-Temperature Nomex & PPS Filter Bags",
-      "Precision-Cast Boiler Grate Bars & Castables",
-      "Industrial Water Treatment Membranes & Dosing Pumps"
-    ],
-    "deliverables": [
-      "Direct OEM-spec component delivery",
-      "Emergency 24-hour dispatch program",
-      "On-site installation and fitting guidance"
-    ],
-    "technical_specs": {
-      "Quality Standard": "ISO / ASME Grade Metallurgy",
-      "Filter Bag Specs": "Singed & Calendered Finish, Hydrophobic Treatment",
-      "Pump Specs": "Metering Dosing Pumps up to 100 LPH"
-    },
-    "sort_order": 8,
-    "is_published": true
-  },
-  {
-    "id": "sol-9",
-    "slug": "steam-energy-loss-diagnosis",
-    "title": "Steam & Energy Loss Diagnosis",
-    "category": "Audits & Diagnostic Services",
-    "short_description": "Data-backed thermal imaging and ultrasonic leak audits uncovering hidden steam traps, insulation, and boiler losses.",
-    "full_description": "Uncover hidden plant energy wastage with quantitative financial accuracy. Antrixx specialized Steam & Energy Loss Diagnosis employs non-invasive thermal imaging cameras, ultrasonic leak detectors, and portable flow meters.",
-    "icon_name": "Search",
-    "hero_image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
-    "features": [
-      "Non-Invasive Ultrasonic Steam Trap Testing",
-      "FLIR Thermal Imaging of Pipe Insulation & Furnace Walls",
-      "Direct & Indirect Boiler Efficiency Measurement",
-      "Quantified Financial Loss Report & ROI Implementation Plan"
-    ],
-    "deliverables": [
-      "Complete steam trap condition register",
-      "Infrared thermography defect report",
-      "Actionable retrofitting proposal with payback period"
-    ],
-    "technical_specs": {
-      "Audit Tools": "FLIR Thermal Imager, UE Systems Ultrasonic Detector, Portable Flow Meter",
-      "Methodology": "BS 845 / ASME PTC 4.1 Boiler Testing Standard",
-      "Report Turnaround": "Within 5 business days"
-    },
-    "sort_order": 9,
-    "is_published": true
-  },
-  {
-    "id": "sol-10",
-    "slug": "retrofitting-boiler-thermic-fluid-heater",
-    "title": "Retrofitting of Boiler & Thermic Fluid Heater",
-    "category": "Boiler House Control",
-    "short_description": "Upgrade existing boilers and thermic heaters with modern combustion, economizers, and PLC automation without replacement.",
-    "full_description": "Revitalize aging thermal infrastructure without the capital expense of buying a new boiler. Antrixx specializes in retrofitting underperforming boilers and thermic fluid heaters.",
-    "icon_name": "RefreshCw",
-    "hero_image_url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=1200&auto=format&fit=crop",
-    "features": [
-      "Furnace Conversion for Biomass, Husk & Coal Dual-Fuel Duty",
-      "Installing Condensing Economizers & Waste Heat Recovery",
-      "PLC/HMI Control Upgrades to Eliminate Unburnt Carbon",
-      "Refractory Reconstruction & High-Density Insulation"
-    ],
-    "deliverables": [
-      "Turnkey mechanical overhaul and piping modification",
-      "Pressure vessel inspection compliance support",
-      "Commissioning and thermal efficiency re-certification"
-    ],
-    "technical_specs": {
-      "Efficiency Boost": "5% to 15% thermal efficiency increase",
-      "Payback Period": "Typically 6 to 14 months",
-      "Downtime": "Scheduled minimal maintenance window"
-    },
-    "sort_order": 10,
-    "is_published": true
-  },
-  {
-    "id": "sol-11",
-    "slug": "project-consultation-management",
-    "title": "Project Consultation & Management",
-    "category": "Turnkey Engineering",
-    "short_description": "End-to-end layout planning, balance-of-plant design, equipment selection, and turnkey boiler house commissioning.",
-    "full_description": "From initial greenfield concept to fully operational utility house, Antrixx delivers comprehensive project consultation and turnkey balance-of-plant management.",
-    "icon_name": "Briefcase",
-    "hero_image_url": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
-    "features": [
-      "3D Utility Layout Planning & Pipe Sizing Engineering",
-      "Boiler House & Cooling System BOP Custom Integration",
-      "Regulatory Environmental & Boiler Inspection Compliance",
-      "Full Supervision from Civil Foundation to Steam Trial"
-    ],
-    "deliverables": [
-      "Detailed P&ID drawings and 3D CAD models",
-      "Vendor evaluation & equipment procurement assistance",
-      "Site execution management and commissioning certificate"
-    ],
-    "technical_specs": {
-      "Engineering Standard": "IS 2825 / ASME Section I & VIII / IBR",
-      "Coverage": "Boiler House, Chiller Plant, Piping Layouts, Water Treatment",
-      "Project Delivery": "Turnkey EPC or Management Consultancy"
-    },
-    "sort_order": 11,
-    "is_published": true
-  },
-  {
-    "id": "sol-12",
-    "slug": "heat-pump-chilling-bop-management",
-    "title": "Heat Pump & Chilling System BOP Management",
-    "category": "Turnkey Engineering",
-    "short_description": "Integrated Balance-of-Plant management for industrial heat pumps, chilling water loops, and waste heat recovery.",
-    "full_description": "Antrixx manages complete Balance-of-Plant (BOP) engineering for industrial heat pumps and chiller systems (including reference management for systems from Kirloskar Chillers).",
-    "icon_name": "Thermometer",
-    "hero_image_url": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop",
-    "features": [
-      "Industrial Heat Pump & Chilling Water System Integration",
-      "Hydronic Loop Balancing & Secondary Pumping Skids",
-      "Waste Heat Recovery & Combined Heating/Cooling Integration",
-      "Turnkey Testing, Commissioning, and Plant Operator Training"
-    ],
-    "deliverables": [
-      "Primary/Secondary chiller piping & valving skid",
-      "Heat exchanger integration & thermal buffer tanks",
-      "Automated chiller plant management panel"
-    ],
-    "technical_specs": {
-      "System Scope": "Balance-of-Plant Integration & Utility Management",
-      "Temperature Range": "Chilled Water 4°C to Hot Water 85°C",
-      "COP Improvement": "Up to 35% energy reduction vs conventional heating/chilling"
-    },
-    "sort_order": 12,
+    "sort_order": 6,
     "is_published": true
   }
 ]
