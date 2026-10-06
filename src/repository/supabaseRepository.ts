@@ -67,19 +67,37 @@ export class SupabaseRepository implements ContentRepository {
     return data || [];
   }
 
+  private parseSolution(s: any): SolutionItem {
+    if (!s) return s;
+    const parseField = (val: any) => {
+      if (typeof val === 'string') {
+        try { return JSON.parse(val); } catch { return val; }
+      }
+      return val;
+    };
+    return {
+      ...s,
+      badge_highlights: parseField(s.badge_highlights),
+      scope_cards: parseField(s.scope_cards),
+      products_and_services: parseField(s.products_and_services),
+      sub_products: parseField(s.sub_products),
+      technical_specs: parseField(s.technical_specs),
+    };
+  }
+
   async getSolutions(): Promise<SolutionItem[]> {
     const { data } = await this.client.from('solutions').select('*').order('sort_order');
-    return data || [];
+    return (data || []).map((s: any) => this.parseSolution(s));
   }
 
   async getSolutionBySlug(slug: string): Promise<SolutionItem | null> {
     const { data } = await this.client.from('solutions').select('*').eq('slug', slug).single();
-    return data;
+    return data ? this.parseSolution(data) : null;
   }
 
   async saveSolution(item: SolutionItem): Promise<SolutionItem> {
     const { data } = await this.client.from('solutions').upsert(item).select().single();
-    return data;
+    return this.parseSolution(data);
   }
 
   async deleteSolution(id: string): Promise<boolean> {
