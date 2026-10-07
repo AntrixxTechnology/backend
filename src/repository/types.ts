@@ -213,6 +213,10 @@ export interface SiteSettings {
   business_hours: string;
   linkedin_url?: string;
   brochure_pdf_url?: string;
+  solutions_hero_title?: string;
+  solutions_hero_description?: string;
+  solutions_hero_image_url?: string;
+  solutions_hero_badge?: string;
 }
 
 export interface BlogPost {
