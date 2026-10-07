@@ -32,3 +32,6 @@ public/uploads/*
 *.njsproj
 *.sln
 *.sw?
+
+# Dev & Migration scripts
+scripts/
