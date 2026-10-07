@@ -95,7 +95,15 @@ export class LocalJsonRepository implements ContentRepository {
 
   async getSolutionBySlug(slug: string): Promise<SolutionItem | null> {
     const list = await this.getSolutions();
-    return list.find((s) => s.slug === slug) || null;
+    let found = list.find((s) => s.slug === slug);
+    if (!found) {
+      if (slug === 'pollution-control-equipment') {
+        found = list.find((s) => s.slug === 'boiler-automation');
+      } else if (slug === 'boiler-automation') {
+        found = list.find((s) => s.slug === 'pollution-control-equipment');
+      }
+    }
+    return found || null;
   }
 
   async saveSolution(item: SolutionItem): Promise<SolutionItem> {

@@ -91,8 +91,16 @@ export class SupabaseRepository implements ContentRepository {
   }
 
   async getSolutionBySlug(slug: string): Promise<SolutionItem | null> {
-    const { data } = await this.client.from('solutions').select('*').eq('slug', slug).single();
-    return data ? this.parseSolution(data) : null;
+    const { data } = await this.client.from('solutions').select('*').eq('slug', slug).maybeSingle();
+    if (data) return this.parseSolution(data);
+    if (slug === 'boiler-automation') {
+      const { data: alt } = await this.client.from('solutions').select('*').eq('slug', 'pollution-control-equipment').maybeSingle();
+      if (alt) return this.parseSolution(alt);
+    } else if (slug === 'pollution-control-equipment') {
+      const { data: alt } = await this.client.from('solutions').select('*').eq('slug', 'boiler-automation').maybeSingle();
+      if (alt) return this.parseSolution(alt);
+    }
+    return null;
   }
 
   async saveSolution(item: SolutionItem): Promise<SolutionItem> {
