@@ -104,7 +104,15 @@ export class SupabaseRepository implements ContentRepository {
   }
 
   async saveSolution(item: SolutionItem): Promise<SolutionItem> {
-    const { data } = await this.client.from('solutions').upsert(item).select().single();
+    const payload = { ...item };
+    if (!payload.id) {
+      delete (payload as any).id;
+    }
+    const { data, error } = await this.client.from('solutions').upsert(payload).select().single();
+    if (error) {
+      console.error('[SupabaseRepository] saveSolution error:', error);
+      throw error;
+    }
     return this.parseSolution(data);
   }
 
@@ -119,7 +127,15 @@ export class SupabaseRepository implements ContentRepository {
   }
 
   async saveIndustry(item: IndustryItem): Promise<IndustryItem> {
-    const { data } = await this.client.from('industries').upsert(item).select().single();
+    const payload = { ...item };
+    if (!payload.id) {
+      delete (payload as any).id;
+    }
+    const { data, error } = await this.client.from('industries').upsert(payload).select().single();
+    if (error) {
+      console.error('[SupabaseRepository] saveIndustry error:', error);
+      throw error;
+    }
     return data;
   }
 
@@ -134,7 +150,15 @@ export class SupabaseRepository implements ContentRepository {
   }
 
   async saveProject(item: ProjectItem): Promise<ProjectItem> {
-    const { data } = await this.client.from('projects').upsert(item).select().single();
+    const payload = { ...item };
+    if (!payload.id) {
+      delete (payload as any).id;
+    }
+    const { data, error } = await this.client.from('projects').upsert(payload).select().single();
+    if (error) {
+      console.error('[SupabaseRepository] saveProject error:', error);
+      throw error;
+    }
     return data;
   }
 

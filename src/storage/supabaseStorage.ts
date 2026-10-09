@@ -10,11 +10,11 @@ export class SupabaseStorageProvider implements StorageProvider {
     this.client = createClient(supabaseUrl, serviceRoleKey);
   }
 
-  async uploadFile(file: Express.Multer.File, bucket = 'solutions'): Promise<string> {
+  async uploadFile(file: Express.Multer.File, bucket = 'general'): Promise<string> {
     const ext = path.extname(file.originalname);
     const fileName = `${uuidv4()}${ext}`;
 
-    let targetBucket = bucket;
+    let targetBucket = bucket || 'general';
     let { error } = await this.client.storage
       .from(targetBucket)
       .upload(fileName, file.buffer, {
@@ -22,8 +22,9 @@ export class SupabaseStorageProvider implements StorageProvider {
         upsert: true,
       });
 
-    if (error && targetBucket !== 'solutions') {
-      targetBucket = 'solutions';
+    if (error && targetBucket !== 'general') {
+      console.warn(`[Storage] Upload to "${targetBucket}" failed (${error.message}). Falling back to "general" bucket...`);
+      targetBucket = 'general';
       const retry = await this.client.storage
         .from(targetBucket)
         .upload(fileName, file.buffer, {
