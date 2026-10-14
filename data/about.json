@@ -1,23 +1,21 @@
 {
   "id": "about-1",
-  "company_story": "Antrixx Technology was established by a team of veteran thermal and utility automation engineers dedicated to optimizing industrial energy efficiency across India. Operating extensively across process industries—including food processing, FMCG, rice & agro processing, textiles, beverages, and chemicals—our team specializes in the sales, engineering, installation, and balance-of-plant service for boilers, thermic fluid heaters, hot water generators, steam automation, and industrial water treatment facilities.",
-  "mission": "To transform industrial utility operations through smart automation, rigorous energy loss diagnostics, and sustainable balance-of-plant engineering that minimizes fuel costs and carbon footprint.",
-  "vision": "To be the most trusted industrial thermal and utility optimization engineering partner in South Asia, recognized for zero-downtime solutions and data-backed operational excellence.",
+  "company_story": "Antrixx Technology is a Kolkata-headquartered industrial engineering and turnkey automation firm led by veteran thermal engineers. We specialize in the complete lifecycle of Boiler & Steam Systems—from custom thermal design, heavy metallurgy fabrication, and site erection to Indian Boiler Regulations (IBR) compliance and preventive Annual Maintenance Contracts (AMC). Partnering with process manufacturers across FMCG, food processing, rice mills, textiles, pharmaceuticals, and chemical manufacturing, Antrixx delivers end-to-end utility infrastructure. Beyond high-efficiency boiler houses, our multidisciplinary engineering team integrates high-capacity Chillers & Heat Pumps, specialized Air Pollution Control Equipment (ESP, Wet Scrubbers, Bag Filters), and precision PLC/SCADA Automation to eliminate fuel waste, reduce carbon emissions, and ensure 24/7 zero-unplanned-downtime operations.",
+  "mission": "To empower process industries nationwide with robust boiler systems, emission control engineering, and intelligent automation that optimize fuel economics and drive sustainable industrial growth.",
+  "vision": "To be India's premier engineering destination for turnkey steam engineering, industrial utility optimization, and sustainable thermal infrastructure.",
   "values": [
-    "Industrial Reliability — Zero compromises on component metallurgy, safety, or control precision.",
-    "Data-Backed Integrity — Every efficiency recommendation is validated by calibrated sensors.",
-    "Pan-India SLA Agility — Rapid field dispatch and continuous technical support."
+    "Industrial Reliability — Zero compromises on boiler metallurgy, safety standards, and IBR compliance.",
+    "Sustainable Efficiency — Delivering measurable fuel reduction, heat recovery, and lower emissions.",
+    "Pan-India SLA Agility — Dedicated field engineering dispatch, 24/7 emergency support, and seamless AMC execution."
   ],
   "capabilities": [
-    "Boiler House & Thermic Fluid Heater Automation",
-    "Utility Remote Monitoring & SCADA Telemetry",
-    "Pollution Control Systems (Bag Filters, Scrubbers, Cyclones)",
-    "Pneumatic & Vacuum Ash Handling Systems",
-    "Solid Fuel Storage & Automated Conveying",
-    "Steam Engineering Automation (PRVs, Blowdown, Traps)",
-    "Industrial Spares Dispatch & Emergency Replacements",
-    "Thermal Loss Diagnostics & Efficiency Audits",
-    "Heat Pump & Chilling System BOP Management"
+    "Boiler & Steam Systems (Design | Fabrication | Installation | AMC)",
+    "Pollution Control Engineering (Cyclone | Bag Filter | Wet Scrubber | ESP)",
+    "Chiller & Heat Pumps (HVAC | Process Cooling | Energy Saving)",
+    "Engineering Solutions (Consulting | Design | Execution)",
+    "Energy Optimization (Efficiency | Cost Saving | Sustainability)",
+    "Other Industrial Services (Retrofit | Upgradation | AMC)",
+    "Industrial Automation (PLC & SCADA | Integration | Support)"
   ],
   "hero_image_url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop"
 }
