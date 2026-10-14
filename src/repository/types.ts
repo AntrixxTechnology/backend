@@ -350,4 +350,7 @@ export interface ContentRepository {
   getErpInvoices(): Promise<ErpInvoice[]>;
   saveErpInvoice(invoice: ErpInvoice): Promise<ErpInvoice>;
   deleteErpInvoice(id: string): Promise<boolean>;
+
+  // Health & Keepalive
+  ping?(): Promise<{ ok: boolean; latencyMs: number; error?: string }>;
 }

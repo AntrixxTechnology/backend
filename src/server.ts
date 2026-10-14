@@ -56,14 +56,42 @@ app.use('/media', (req, res, next) => {
 app.use('/api', contactRoutes);
 app.use('/api/admin', adminRoutes);
 
-// Healthcheck
-app.get('/health', (req, res) => {
-  res.json({
-    status: 'ok',
-    timestamp: new Date().toISOString(),
-    service: 'Antrixx Technology API Backend',
-  });
+// Healthcheck with Database Ping
+app.get('/health', async (req, res) => {
+  try {
+    const { getRepository } = await import('./repository/index.js');
+    const repo = getRepository();
+    const db = repo.ping ? await repo.ping() : { ok: true, latencyMs: 0 };
+    res.json({
+      status: db.ok ? 'ok' : 'degraded',
+      database: db,
+      timestamp: new Date().toISOString(),
+      service: 'Antrixx Technology API Backend',
+    });
+  } catch (err: any) {
+    res.status(500).json({
+      status: 'error',
+      error: err.message,
+      timestamp: new Date().toISOString(),
+    });
+  }
 });
+
+// Periodic background DB ping for persistent Node processes (every 12 hours)
+if (!process.env.VERCEL) {
+  setInterval(async () => {
+    try {
+      const { getRepository } = await import('./repository/index.js');
+      const repo = getRepository();
+      if (repo.ping) {
+        const pingRes = await repo.ping();
+        console.log(`[KeepAlive] Background ping to ${repo.constructor.name}: ok=${pingRes.ok}, latency=${pingRes.latencyMs}ms`);
+      }
+    } catch (e: any) {
+      console.warn(`[KeepAlive] Ping warning:`, e.message);
+    }
+  }, 12 * 60 * 60 * 1000);
+}
 
 // Only listen on a port if not running in Vercel Serverless environment
 if (!process.env.VERCEL) {

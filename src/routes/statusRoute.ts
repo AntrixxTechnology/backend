@@ -6,14 +6,46 @@ const startTime = Date.now();
 import { getRepository } from '../repository/index.js';
 import { getStorageProvider } from '../storage/index.js';
 
-router.get('/api/status', (req, res) => {
+// =========================================================================
+// SUPABASE DATABASE KEEPALIVE & STATUS
+// Prevents Supabase project from pausing due to inactivity
+// =========================================================================
+router.get(['/api/keepalive', '/keepalive'], async (req, res) => {
+  try {
+    const repo = getRepository();
+    const dbStatus = repo.ping ? await repo.ping() : { ok: true, latencyMs: 0 };
+
+    res.json({
+      status: dbStatus.ok ? 'HEALTHY' : 'DEGRADED',
+      message: 'Database keepalive ping executed successfully',
+      timestamp: new Date().toISOString(),
+      database: {
+        provider: repo.constructor.name,
+        ...dbStatus,
+      },
+    });
+  } catch (err: any) {
+    res.status(500).json({
+      status: 'ERROR',
+      message: 'Keepalive ping failed',
+      error: err.message,
+      timestamp: new Date().toISOString(),
+    });
+  }
+});
+
+router.get('/api/status', async (req, res) => {
+  const repo = getRepository();
+  const dbStatus = repo.ping ? await repo.ping() : { ok: true, latencyMs: 0 };
+
   res.json({
-    status: 'ONLINE',
+    status: dbStatus.ok ? 'ONLINE' : 'DEGRADED',
     server: 'Antrixx Technology API Backend',
     port: process.env.PORT || 5000,
     uptime_seconds: Math.floor((Date.now() - startTime) / 1000),
     timestamp: new Date().toISOString(),
-    repository: getRepository().constructor.name,
+    repository: repo.constructor.name,
+    database_status: dbStatus,
     storage: getStorageProvider().constructor.name
   });
 });

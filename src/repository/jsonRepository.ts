@@ -438,4 +438,8 @@ export class LocalJsonRepository implements ContentRepository {
     if (filtered.length !== invs.length) { this.writeJson('erp_invoices.json', filtered); return Promise.resolve(true); }
     return Promise.resolve(false);
   }
+
+  async ping(): Promise<{ ok: boolean; latencyMs: number }> {
+    return Promise.resolve({ ok: true, latencyMs: 0 });
+  }
 }

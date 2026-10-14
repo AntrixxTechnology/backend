@@ -407,4 +407,17 @@ export class SupabaseRepository implements ContentRepository {
     const { error } = await this.client.from('erp_invoices').delete().eq('id', id);
     return !error;
   }
+
+  async ping(): Promise<{ ok: boolean; latencyMs: number; error?: string }> {
+    const start = Date.now();
+    try {
+      const { error } = await this.client.from('hero').select('id').limit(1);
+      if (error) {
+        return { ok: false, latencyMs: Date.now() - start, error: error.message };
+      }
+      return { ok: true, latencyMs: Date.now() - start };
+    } catch (err: any) {
+      return { ok: false, latencyMs: Date.now() - start, error: err.message };
+    }
+  }
 }
