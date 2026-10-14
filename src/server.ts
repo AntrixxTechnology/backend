@@ -43,6 +43,7 @@ const uploadsPath = path.resolve(process.cwd(), 'public', 'uploads');
 const publicPath = path.resolve(process.cwd(), 'public');
 app.use('/uploads', express.static(uploadsPath));
 app.use('/public', express.static(publicPath));
+app.use(express.static(publicPath));
 
 // Mount Status Dashboard & API
 app.use('/', statusRoute);
