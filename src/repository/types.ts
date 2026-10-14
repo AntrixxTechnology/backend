@@ -212,6 +212,8 @@ export interface SiteSettings {
   address: string;
   business_hours: string;
   linkedin_url?: string;
+  facebook_url?: string;
+  instagram_url?: string;
   brochure_pdf_url?: string;
   solutions_hero_title?: string;
   solutions_hero_accent?: string;
