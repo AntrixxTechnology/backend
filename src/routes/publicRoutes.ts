@@ -2,6 +2,7 @@ import { Router } from 'express';
 import path from 'path';
 import fs from 'fs';
 import { getRepository } from '../repository/index.js';
+import { getStorageProvider } from '../storage/index.js';
 
 const router = Router();
 
@@ -212,6 +213,59 @@ router.get('/content/settings', async (req, res) => {
     res.json(data);
   } catch (err: any) {
     res.status(500).json({ error: err.message });
+  }
+});
+
+// =========================================================================
+// MEDIA PROXY ROUTES (Completely hides Supabase Storage from browser)
+// =========================================================================
+router.get('/media/:bucket/:filename', async (req, res) => {
+  try {
+    const { bucket, filename } = req.params;
+    const storage = getStorageProvider();
+
+    if (storage.downloadFile) {
+      const fileData = await storage.downloadFile(bucket, filename);
+      if (fileData) {
+        res.setHeader('Content-Type', fileData.contentType);
+        res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        return res.send(fileData.data);
+      }
+
+      // Fallback to 'general' bucket if requested bucket is different
+      if (bucket !== 'general') {
+        const fallback = await storage.downloadFile('general', filename);
+        if (fallback) {
+          res.setHeader('Content-Type', fallback.contentType);
+          res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+          return res.send(fallback.data);
+        }
+      }
+    }
+
+    res.status(404).send('Media asset not found');
+  } catch (err: any) {
+    res.status(500).send('Error loading media asset');
+  }
+});
+
+router.get('/media/:filename', async (req, res) => {
+  try {
+    const { filename } = req.params;
+    const storage = getStorageProvider();
+
+    if (storage.downloadFile) {
+      const fileData = await storage.downloadFile('general', filename);
+      if (fileData) {
+        res.setHeader('Content-Type', fileData.contentType);
+        res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        return res.send(fileData.data);
+      }
+    }
+
+    res.status(404).send('Media asset not found');
+  } catch (err: any) {
+    res.status(500).send('Error loading media asset');
   }
 });
 

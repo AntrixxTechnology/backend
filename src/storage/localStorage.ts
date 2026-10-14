@@ -28,6 +28,25 @@ export class LocalDiskStorageProvider implements StorageProvider {
     return `/uploads/${bucket}/${fileName}`;
   }
 
+  async downloadFile(bucket: string, fileName: string): Promise<{ data: Buffer; contentType: string } | null> {
+    const filePath = path.join(this.uploadDir, bucket, fileName);
+    if (!fs.existsSync(filePath)) return null;
+    const buffer = fs.readFileSync(filePath);
+    const ext = path.extname(fileName).toLowerCase();
+    const mimeMap: Record<string, string> = {
+      '.jpg': 'image/jpeg',
+      '.jpeg': 'image/jpeg',
+      '.png': 'image/png',
+      '.webp': 'image/webp',
+      '.svg': 'image/svg+xml',
+      '.pdf': 'application/pdf',
+    };
+    return {
+      data: buffer,
+      contentType: mimeMap[ext] || 'application/octet-stream',
+    };
+  }
+
   async deleteFile(fileUrl: string): Promise<boolean> {
     if (!fileUrl.startsWith('/uploads/')) return false;
     const relativePath = fileUrl.replace('/uploads/', '');

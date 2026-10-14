@@ -38,8 +38,40 @@ export class SupabaseStorageProvider implements StorageProvider {
       throw new Error(`Supabase storage upload error: ${error.message}`);
     }
 
-    const { data: publicUrlData } = this.client.storage.from(targetBucket).getPublicUrl(fileName);
-    return publicUrlData.publicUrl;
+    // Return proxy URL hiding Supabase storage origin
+    return `/api/media/${targetBucket}/${fileName}`;
+  }
+
+  private getMimeType(fileName: string, fallbackType?: string): string {
+    const ext = path.extname(fileName).toLowerCase();
+    const mimeMap: Record<string, string> = {
+      '.png': 'image/png',
+      '.jpg': 'image/jpeg',
+      '.jpeg': 'image/jpeg',
+      '.webp': 'image/webp',
+      '.svg': 'image/svg+xml',
+      '.gif': 'image/gif',
+      '.ico': 'image/x-icon',
+      '.pdf': 'application/pdf',
+    };
+    if (mimeMap[ext]) return mimeMap[ext];
+    if (fallbackType && fallbackType !== 'application/octet-stream') return fallbackType;
+    return 'image/jpeg';
+  }
+
+  async downloadFile(bucket: string, fileName: string): Promise<{ data: Buffer; contentType: string } | null> {
+    try {
+      const cleanFileName = decodeURIComponent(fileName);
+      const { data, error } = await this.client.storage.from(bucket).download(cleanFileName);
+      if (error || !data) return null;
+      const buffer = Buffer.from(await data.arrayBuffer());
+      return {
+        data: buffer,
+        contentType: this.getMimeType(cleanFileName, data.type),
+      };
+    } catch {
+      return null;
+    }
   }
 
   async deleteFile(fileUrl: string, bucket = 'solutions'): Promise<boolean> {

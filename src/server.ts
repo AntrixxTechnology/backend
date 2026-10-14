@@ -14,8 +14,12 @@ const PORT = process.env.PORT || 5000;
 
 // CORS configuration
 const allowedOrigins = [
-  process.env.CORS_ORIGIN_FRONTEND || 'https://antrixx-mainfrontend.vercel.app',
-  process.env.CORS_ORIGIN_ADMIN || 'https://antrixx-admin.vercel.app',
+  process.env.CORS_ORIGIN_FRONTEND || 'https://antrixxtechnology.net',
+  process.env.CORS_ORIGIN_ADMIN || 'https://admin.antrixxtechnology.net',
+  'https://antrixxtechnology.net',
+  'https://www.antrixxtechnology.net',
+  'https://admin.antrixxtechnology.net',
+  'https://api.antrixxtechnology.net',
   'https://antrixx-mainfrontend.vercel.app',
   'https://antrixx-admin.vercel.app',
   'http://localhost:5173',
@@ -45,6 +49,10 @@ app.use('/', statusRoute);
 
 // Mount Business Routes
 app.use('/api', publicRoutes);
+app.use('/media', (req, res, next) => {
+  req.url = '/media' + req.url;
+  publicRoutes(req, res, next);
+});
 app.use('/api', contactRoutes);
 app.use('/api/admin', adminRoutes);
 

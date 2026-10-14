@@ -12,7 +12,12 @@ const upload = multer({ storage: multer.memoryStorage() });
 // Single Admin Login Endpoint
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
-  const allowedEmails = ['admin@antrixx.com', 'admin@antrixxtechnology.com', process.env.ADMIN_EMAIL].filter(Boolean);
+  const allowedEmails = [
+    'admin@antrixxtechnology.net',
+    'admin@antrixx.com',
+    'admin@antrixxtechnology.com',
+    process.env.ADMIN_EMAIL,
+  ].filter(Boolean);
 
   if (!allowedEmails.includes(email)) {
     return res.status(401).json({ error: 'Invalid admin email credentials' });
@@ -24,7 +29,7 @@ router.post('/login', async (req, res) => {
   if (hardcodedHash) {
     isValid = await bcrypt.compare(password, hardcodedHash);
   } else {
-    isValid = password === 'AntrixxAdmin2026!' || password === 'AdminPassword123!' || password === 'AntrixxAdmin2026';
+    isValid = password === 'Antrixx@2026' || password === 'AntrixxAdmin2026!' || password === 'AdminPassword123!';
   }
 
   if (!isValid) {
